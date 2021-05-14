@@ -1,0 +1,14 @@
+2021-05-14 21:05:00,861 INFO [main] c.w.s.LoggerTest [StartupInfoLogger.java:55] Starting LoggerTest using Java 14.0.2 on LAPTOP-CCKROGRM with PID 1648 (started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
+2021-05-14 21:05:00,865 INFO [main] c.w.s.LoggerTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-05-14 21:05:03,583 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-14 21:05:03,773 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-05-14 21:05:04,276 INFO [main] c.w.s.LoggerTest [StartupInfoLogger.java:61] Started LoggerTest in 3.976 seconds (JVM running for 5.474)
+2021-05-14 21:05:04,877 INFO [main] c.w.s.LoggerTest [LoggerTest.java:23] info log
+2021-05-14 21:05:04,906 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-14 21:09:13,552 INFO [main] c.w.s.LoggerTest [StartupInfoLogger.java:55] Starting LoggerTest using Java 14.0.2 on LAPTOP-CCKROGRM with PID 11980 (started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
+2021-05-14 21:09:13,557 INFO [main] c.w.s.LoggerTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-05-14 21:09:16,418 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-14 21:09:16,626 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-05-14 21:09:17,201 INFO [main] c.w.s.LoggerTest [StartupInfoLogger.java:61] Started LoggerTest in 4.149 seconds (JVM running for 5.58)
+2021-05-14 21:09:17,938 INFO [main] c.w.s.LoggerTest [LoggerTest.java:23] info log
+2021-05-14 21:09:17,969 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
