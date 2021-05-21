@@ -1,9 +1,11 @@
 package com.wu.studyniuke;
 
 import com.wu.studyniuke.dao.DiscussPostMapper;
+import com.wu.studyniuke.dao.LoginTicketMapper;
 import com.wu.studyniuke.dao.UserMapper;
 
 import com.wu.studyniuke.entity.DiscussPost;
+import com.wu.studyniuke.entity.LoginTicket;
 import com.wu.studyniuke.entity.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +30,11 @@ public class MapperTest {
     @Autowired
     private DiscussPostMapper discussPostMapper;
 
+    @Autowired
+    private LoginTicketMapper loginTicketMapper;
+
     @Test
-    public void testSelectUser(){
+    public void testSelectUser() {
         User user = userMapper.selectUserById(1);
         System.out.println(user);
 
@@ -41,7 +46,7 @@ public class MapperTest {
     }
 
     @Test
-    public void testInsertUser(){
+    public void testInsertUser() {
         User user = new User();
         user.setId(5);
         user.setUsername("老王");
@@ -60,14 +65,30 @@ public class MapperTest {
     }
 
     @Test
-    public void testSelectDiscussPort(){
+    public void testSelectDiscussPort() {
         int i = discussPostMapper.selectDiscussPostRows(123123);
-        List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(0,0,10);
+        List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(0, 0, 10);
         for (DiscussPost discussPost : discussPosts) {
-            System.out.println(discussPost.toString()+"查询的discussPost");
+            System.out.println(discussPost.toString() + "查询的discussPost");
         }
         System.out.println(i);
 
     }
 
+    @Test
+    public void testLoginTicket() {
+        LoginTicket loginTicket = new LoginTicket();
+        loginTicket.setTicket("aaa");
+        loginTicket.setStatus(0);
+        loginTicket.setUserId(1);
+        loginTicket.setExpired(new Date(System.currentTimeMillis() + 1000 * 60 * 10));
+
+        loginTicketMapper.insertLoginTicket(loginTicket);
+    }
+
+    @Test
+    public void testSelectLogin(){
+        LoginTicket loginTicket = loginTicketMapper.selectByTicket("aaa");
+        loginTicketMapper.updateStatus("aaa",1);
+    }
 }

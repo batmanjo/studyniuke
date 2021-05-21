@@ -7,16 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="studyniuke" />
+        <module name="studynewcode" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="studyniuke" target="8" />
+      <module name="studynewcode" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="studyniuke" options="-parameters" />
+      <module name="studynewcode" options="-parameters" />
     </option>
   </component>
 </project>
