@@ -1030,3 +1030,143 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'heade
 2021-05-21 17:00:20,191 ERROR [http-nio-9999-exec-2] c.w.s.c.UserController [UserController.java:96] fail to get image3bfa68e4f9db48deb67f5defd48501ac.jpg (系统找不到指定的文件。)
 2021-05-21 17:00:31,413 ERROR [http-nio-9999-exec-4] c.w.s.c.UserController [UserController.java:96] fail to get image3bfa68e4f9db48deb67f5defd48501ac.jpg (系统找不到指定的文件。)
 2021-05-21 17:00:36,462 ERROR [http-nio-9999-exec-5] c.w.s.c.UserController [UserController.java:96] fail to get image3bfa68e4f9db48deb67f5defd48501ac.jpg (系统找不到指定的文件。)
+2021-05-25 17:47:54,465 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+2021-05-25 17:50:36,520 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+2021-05-25 17:51:09,735 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+2021-05-25 19:14:59,450 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+2021-05-25 19:15:33,332 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+2021-05-25 19:16:05,923 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+2021-05-25 20:52:55,934 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+2021-05-25 21:11:03,228 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+2021-05-25 22:08:47,473 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+2021-05-25 22:11:03,685 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
