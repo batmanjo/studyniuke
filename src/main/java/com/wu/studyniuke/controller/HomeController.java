@@ -3,7 +3,7 @@ package com.wu.studyniuke.controller;
 import com.wu.studyniuke.entity.DiscussPost;
 import com.wu.studyniuke.entity.Page;
 import com.wu.studyniuke.entity.User;
-import com.wu.studyniuke.service.DiscussPortService;
+import com.wu.studyniuke.service.DiscussPostService;
 import com.wu.studyniuke.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,17 +24,17 @@ import java.util.Map;
 public class HomeController {
 
     @Autowired
-    private DiscussPortService discussPortService;
+    private DiscussPostService discussPostService;
     @Autowired
     private UserService userService;
 
     @RequestMapping(path = "/index" , method = RequestMethod.GET)
     public String getIndexPage(Model model, Page page){
-        page.setRows(discussPortService.selectDiscussPostRows(0));
+        page.setRows(discussPostService.selectDiscussPostRows(0));
         page.setPath("/index");
 
 
-        List<DiscussPost> list = discussPortService.selectDiscussPosts(0, page.getOffset(), page.getLimit());
+        List<DiscussPost> list = discussPostService.selectDiscussPosts(0, page.getOffset(), page.getLimit());
         List<Map<String,Object>> discussPosts = new ArrayList<>();
         if(list != null ){
             for (DiscussPost discussPost : list) {

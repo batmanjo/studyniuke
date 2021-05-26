@@ -4,10 +4,10 @@ import org.apache.commons.lang3.CharUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import javax.servlet.*;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -21,6 +21,7 @@ public class SensitiveFilter {
     private static final Logger LOGGER = LoggerFactory.getLogger(SensitiveFilter.class);
     private static final String REPLACEMENT = "***";
     private TrieNode rootNode = new TrieNode();
+
 
     @PostConstruct
     public void init() {
