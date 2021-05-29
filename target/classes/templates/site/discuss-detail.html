@@ -97,18 +97,18 @@
 							<div class="mt-4 text-muted font-size-12">
 								<span>发布于 <b th:text="${#dates.format(cvo.comment.createTime,'yyyy-MM-dd HH:mm:ss')}">2019-04-15 15:32:18</b></span>
 								<ul class="d-inline float-right">
-									<li class="d-inline ml-2">
-										<a href="javascript:;" th:onclick="|like(this,2,${cvo.comment.id},${cvo.comment.userId},${post.id});|" class="text-primary">
-											<b th:text="${cvo.likeStatus==1?'已赞':'赞'}">赞</b>(<i th:text="${cvo.likeCount}">1</i>)
-										</a>
-									</li>
+<!--									<li class="d-inline ml-2">-->
+<!--										<a href="javascript:;" th:onclick="|like(this,2,${cvo.comment.id},${cvo.comment.userId},${post.id});|" class="text-primary">-->
+<!--											<b th:text="${cvo.likeStatus==1?'已赞':'赞'}">赞</b>(<i th:text="${cvo.likeCount}">1</i>)-->
+<!--										</a>-->
+<!--									</li>-->
 									<li class="d-inline ml-2">|</li>
 									<li class="d-inline ml-2"><a th:href="|#huifu1-${page.offset + cvoStat.count}|" class="text-primary">回复(<i th:text="${cvo.replyCount}">2</i>)</a></li>
 								</ul>
 							</div>
 							<!-- 回复列表 -->
 							<ul class="list-unstyled mt-4 bg-gray p-3 font-size-12 text-muted">
-								<li class="pb-3 pt-3 mb-3 border-bottom" th:each="rvo:${cvo.replys}">
+								<li class="pb-3 pt-3 mb-3 bo	rder-bottom" th:each="rvo:${cvo.replys}">
 									<div>
 										<span th:if="${rvo.target==null}">
 											<b class="text-info" th:text="${rvo.user.username}">寒江雪</b>:&nbsp;&nbsp;
@@ -122,11 +122,11 @@
 									<div class="mt-3">
 										<span th:text="${#dates.format(rvo.reply.createTime,'yyyy-MM-dd HH:mm:ss')}">2019-04-15 15:32:18</span>
 										<ul class="d-inline float-right">
-											<li class="d-inline ml-2">
-												<a href="javascript:;" th:onclick="|like(this,2,${rvo.reply.id},${rvo.reply.userId},${post.id});|" class="text-primary">
-													<b th:text="${rvo.likeStatus==1?'已赞':'赞'}">赞</b>(<i th:text="${rvo.likeCount}">1</i>)
-												</a>
-											</li>
+<!--											<li class="d-inline ml-2">-->
+<!--												<a href="javascript:;" th:onclick="|like(this,2,${rvo.reply.id},${rvo.reply.userId},${post.id});|" class="text-primary">-->
+<!--													<b th:text="${rvo.likeStatus==1?'已赞':'赞'}">赞</b>(<i th:text="${rvo.likeCount}">1</i>)-->
+<!--												</a>-->
+<!--											</li>-->
 											<li class="d-inline ml-2">|</li>
 											<li class="d-inline ml-2"><a th:href="|#huifu-${rvoStat.count}|" data-toggle="collapse" class="text-primary">回复</a></li>
 										</ul>
@@ -143,7 +143,7 @@
 												</div>
 											</form>
 										</div>
-									</div>								
+									</div>
 								</li>
 								<!-- 回复输入框 -->
 								<li class="pb-3 pt-3">

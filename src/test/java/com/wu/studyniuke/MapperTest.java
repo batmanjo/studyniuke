@@ -1,9 +1,11 @@
 package com.wu.studyniuke;
 
+import com.wu.studyniuke.dao.CommentMapper;
 import com.wu.studyniuke.dao.DiscussPostMapper;
 import com.wu.studyniuke.dao.LoginTicketMapper;
 import com.wu.studyniuke.dao.UserMapper;
 
+import com.wu.studyniuke.entity.Comment;
 import com.wu.studyniuke.entity.DiscussPost;
 import com.wu.studyniuke.entity.LoginTicket;
 import com.wu.studyniuke.entity.User;
@@ -32,6 +34,9 @@ public class MapperTest {
 
     @Autowired
     private LoginTicketMapper loginTicketMapper;
+
+    @Autowired
+    private CommentMapper commentMapper;
 
     @Test
     public void testSelectUser() {
@@ -90,5 +95,14 @@ public class MapperTest {
     public void testSelectLogin(){
         LoginTicket loginTicket = loginTicketMapper.selectByTicket("aaa");
         loginTicketMapper.updateStatus("aaa",1);
+    }
+
+    @Test
+    public void testSelectComment(){
+        List<Comment> comments = commentMapper.selectCommentByEntity(1, 13, 0, 5);
+
+        System.out.println(comments);
+
+
     }
 }
