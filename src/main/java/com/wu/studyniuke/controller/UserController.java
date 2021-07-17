@@ -1,7 +1,11 @@
 package com.wu.studyniuke.controller;
 
 import com.wu.studyniuke.annotation.LoginRequired;
+import com.wu.studyniuke.entity.User;
+import com.wu.studyniuke.service.FollowService;
+import com.wu.studyniuke.service.LikeService;
 import com.wu.studyniuke.service.UserService;
+import com.wu.studyniuke.util.CommunityConstant;
 import com.wu.studyniuke.util.CommunityUtil;
 import com.wu.studyniuke.util.HostHolder;
 import org.apache.commons.lang3.StringUtils;
@@ -14,6 +18,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.ServletOutputStream;
@@ -29,7 +34,7 @@ import java.io.IOException;
  */
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class UserController implements CommunityConstant {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 
     @Value("${community.path.upload}")
@@ -46,6 +51,12 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private LikeService likeService;
+
+    @Autowired
+    private FollowService followService;
 
     @LoginRequired
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
@@ -98,5 +109,37 @@ public class UserController {
         } catch (IOException e) {
             LOGGER.error("fail to get image" + e.getMessage());
         }
+    }
+
+    // 个人主页
+    @RequestMapping(path = "/profile/{userId}", method = RequestMethod.GET)
+    public String getProfilePage(@PathVariable("userId") int userId, Model model,
+                                 @RequestParam(name = "infoMode", defaultValue = "0") int infoMode) {
+        User user = userService.findUserById(userId);
+        if (user == null) {
+            throw new RuntimeException("该用户不存在!");
+        }
+
+        // 用户
+        model.addAttribute("user", user);
+        // 点赞数量
+        int likeCount = likeService.findUserLikeCount(userId);
+        model.addAttribute("likeCount", likeCount);
+
+        // 关注数量
+        long followeeCount = followService.findFolloweeCount(userId, ENTITY_TYPE_USER);
+        model.addAttribute("followeeCount", followeeCount);
+        // 粉丝数量
+        long followerCount = followService.findFollowerCount(ENTITY_TYPE_USER, userId);
+        model.addAttribute("followerCount", followerCount);
+        // 是否已关注
+        boolean hasFollowed = false;
+        if (hostHolder.getUser() != null) {
+            hasFollowed = followService.hasFollowed(hostHolder.getUser().getId(), ENTITY_TYPE_USER, userId);
+        }
+        model.addAttribute("hasFollowed", hasFollowed);
+        model.addAttribute("infoMode", infoMode);
+
+        return "/site/profile";
     }
 }

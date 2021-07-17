@@ -82,7 +82,7 @@ public class UserService implements CommunityConstant {
         }
 
         user.setSalt(CommunityUtil.generateUUID().substring(0,5));
-        user.setPassword(CommunityUtil.md5(user.getPassword())+user.getSalt());
+        user.setPassword(CommunityUtil.md5(user.getPassword()+user.getSalt()));
         user.setType(0);
         user.setStatus(0);
         user.setActivationCode(CommunityUtil.generateUUID());
