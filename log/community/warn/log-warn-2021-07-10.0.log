@@ -1,0 +1,1 @@
+2021-07-10 17:17:11,090 WARN [lettuce-nioEventLoop-4-2] i.l.c.p.ConnectionWatchdog [AbstractInternalLogger.java:151] Cannot reconnect to [localhost:6379]: Connection refused: no further information: localhost/127.0.0.1:6379

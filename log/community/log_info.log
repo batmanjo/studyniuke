@@ -1,95 +1,20 @@
-2021-05-30 15:24:21,368 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:55] Starting StudyniukeApplication using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 32 (D:\Softwares\IDEA\mavenProject\studyniuke\target\classes started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
-2021-05-30 15:24:21,378 INFO [main] c.w.s.StudyniukeApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
-2021-05-30 15:24:22,635 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 9999 (http)
-2021-05-30 15:24:22,644 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9999"]
-2021-05-30 15:24:22,645 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-30 15:24:22,646 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-30 15:24:22,777 INFO [main] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-30 15:24:22,777 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1339 ms
-2021-05-30 15:24:23,320 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
-2021-05-30 15:24:23,463 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-30 15:24:23,560 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-05-30 15:24:23,738 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9999"]
-2021-05-30 15:24:23,755 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 9999 (http) with context path '/wu'
-2021-05-30 15:24:23,765 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:61] Started StudyniukeApplication in 3.123 seconds (JVM running for 4.454)
-2021-05-30 15:25:08,854 INFO [http-nio-9999-exec-1] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-30 15:25:08,855 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-30 15:25:08,856 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
-2021-05-30 15:25:08,926 INFO [http-nio-9999-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-05-30 15:25:09,112 INFO [http-nio-9999-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-05-30 15:29:27,955 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:55] Starting StudyniukeApplication using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 6604 (D:\Softwares\IDEA\mavenProject\studyniuke\target\classes started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
-2021-05-30 15:29:27,967 INFO [main] c.w.s.StudyniukeApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
-2021-05-30 15:29:29,015 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 9999 (http)
-2021-05-30 15:29:29,025 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9999"]
-2021-05-30 15:29:29,025 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-30 15:29:29,025 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-30 15:29:29,145 INFO [main] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-30 15:29:29,145 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1140 ms
-2021-05-30 15:29:29,549 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
-2021-05-30 15:29:29,675 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-30 15:29:29,754 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-05-30 15:29:29,925 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9999"]
-2021-05-30 15:29:29,942 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 9999 (http) with context path '/wu'
-2021-05-30 15:29:29,953 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:61] Started StudyniukeApplication in 2.399 seconds (JVM running for 3.612)
-2021-05-30 15:29:34,675 INFO [http-nio-9999-exec-1] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-30 15:29:34,675 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-30 15:29:34,676 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 0 ms
-2021-05-30 15:29:34,706 INFO [http-nio-9999-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-05-30 15:29:34,866 INFO [http-nio-9999-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-05-30 15:30:15,555 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:55] Starting StudyniukeApplication using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 3660 (D:\Softwares\IDEA\mavenProject\studyniuke\target\classes started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
-2021-05-30 15:30:15,555 INFO [main] c.w.s.StudyniukeApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
-2021-05-30 15:30:16,845 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 9999 (http)
-2021-05-30 15:30:16,845 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9999"]
-2021-05-30 15:30:16,855 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-30 15:30:16,855 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-30 15:30:16,962 INFO [main] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-30 15:30:16,962 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1352 ms
-2021-05-30 15:30:17,389 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
-2021-05-30 15:30:17,518 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-30 15:30:17,595 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-05-30 15:30:17,791 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9999"]
-2021-05-30 15:30:17,809 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 9999 (http) with context path '/wu'
-2021-05-30 15:30:17,821 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:61] Started StudyniukeApplication in 2.776 seconds (JVM running for 3.956)
-2021-05-30 15:30:24,520 INFO [http-nio-9999-exec-1] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-30 15:30:24,521 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-30 15:30:24,522 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
-2021-05-30 15:30:24,549 INFO [http-nio-9999-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-05-30 15:30:24,712 INFO [http-nio-9999-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-05-30 15:31:15,137 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:55] Starting StudyniukeApplication using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 4612 (D:\Softwares\IDEA\mavenProject\studyniuke\target\classes started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
-2021-05-30 15:31:15,137 INFO [main] c.w.s.StudyniukeApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
-2021-05-30 15:31:16,274 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 9999 (http)
-2021-05-30 15:31:16,284 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9999"]
-2021-05-30 15:31:16,285 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-30 15:31:16,286 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-30 15:31:16,396 INFO [main] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-30 15:31:16,396 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1208 ms
-2021-05-30 15:31:16,871 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
-2021-05-30 15:31:16,993 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-30 15:31:17,065 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-05-30 15:31:17,236 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9999"]
-2021-05-30 15:31:17,253 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 9999 (http) with context path '/wu'
-2021-05-30 15:31:17,263 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:61] Started StudyniukeApplication in 2.67 seconds (JVM running for 3.731)
-2021-05-30 15:31:17,940 INFO [http-nio-9999-exec-1] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-30 15:31:17,940 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-30 15:31:17,942 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
-2021-05-30 15:31:17,976 INFO [http-nio-9999-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-05-30 15:31:18,170 INFO [http-nio-9999-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-05-30 15:34:00,970 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:55] Starting StudyniukeApplication using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 292 (D:\Softwares\IDEA\mavenProject\studyniuke\target\classes started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
-2021-05-30 15:34:00,980 INFO [main] c.w.s.StudyniukeApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
-2021-05-30 15:34:02,109 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 9999 (http)
-2021-05-30 15:34:02,117 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9999"]
-2021-05-30 15:34:02,118 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-30 15:34:02,118 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-30 15:34:02,216 INFO [main] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-30 15:34:02,217 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1192 ms
-2021-05-30 15:34:02,599 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
-2021-05-30 15:34:02,707 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-30 15:34:02,777 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-05-30 15:34:02,969 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9999"]
-2021-05-30 15:34:02,987 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 9999 (http) with context path '/wu'
-2021-05-30 15:34:02,997 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:61] Started StudyniukeApplication in 2.486 seconds (JVM running for 3.658)
-2021-05-30 15:34:08,519 INFO [http-nio-9999-exec-1] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-30 15:34:08,519 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-30 15:34:08,520 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
-2021-05-30 15:34:08,549 INFO [http-nio-9999-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-05-30 15:34:08,706 INFO [http-nio-9999-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-07-18 08:36:10,977 INFO [lettuce-nioEventLoop-4-1] i.l.c.p.CommandHandler [AbstractInternalLogger.java:217] null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-18 08:36:11,044 INFO [lettuce-eventExecutorLoop-1-2] i.l.c.p.ConnectionWatchdog [AbstractInternalLogger.java:171] Reconnecting, last destination was localhost/127.0.0.1:6379
