@@ -55,6 +55,10 @@ public class KafkaTest {
 
         System.out.println(JSONObject.toJSONString(map));
         System.out.println("是否显示消息");
+        String s = JSONObject.toJSONString(map);
+        Map<String,Object> map1 = JSON.parseObject(s,HashMap.class);
+
+        System.out.println(map1.get("userId"));
         kafkaProducer.sendMessage("test", JSONObject.toJSONString(integer));
         kafkaProducer.sendMessage("test", JSONObject.toJSONString(map));
 

@@ -1,13 +1,12 @@
 package com.wu.studyniuke.event;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.wu.studyniuke.entity.Event;
 import com.wu.studyniuke.entity.Message;
 import com.wu.studyniuke.service.MessageService;
 import com.wu.studyniuke.util.CommunityConstant;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.common.protocol.types.Field;
-import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +36,11 @@ public class EventConsumer implements CommunityConstant {
             return;
         }
 
-        Event event = JSONObject.parseObject(consumerRecord.value().toString(), Event.class);
+
+        System.out.println("beforeParseEvent");
+        Event event = JSON.parseObject(consumerRecord.value().toString(), Event.class);
+        System.out.println(event.getData().entrySet().toString());
+
 
         if (event == null) {
             LOGGER.error("消息格式错误");

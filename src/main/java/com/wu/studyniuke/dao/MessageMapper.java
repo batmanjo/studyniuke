@@ -26,5 +26,11 @@ public interface MessageMapper {
 
     int updateStatus(List<Integer> ids,int status);
 
-    List<Message> selectSystemNotices(int useId);
+    List<Message> selectSystemNotices(int userId,String conversationId,int offset,int limit);
+
+    int selectNoticeUnreadCount(int userId,String conversationId);
+
+    int selectNoticeCounts(int userId,String conversationId);
+
+
 }

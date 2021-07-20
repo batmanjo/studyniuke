@@ -1,10 +1,13 @@
 package com.wu.studyniuke.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.wu.studyniuke.entity.Message;
 import com.wu.studyniuke.entity.Page;
 import com.wu.studyniuke.entity.User;
 import com.wu.studyniuke.service.MessageService;
 import com.wu.studyniuke.service.UserService;
+import com.wu.studyniuke.util.CommunityConstant;
 import com.wu.studyniuke.util.CommunityUtil;
 import com.wu.studyniuke.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +26,7 @@ import java.util.*;
  */
 @Controller
 //@RequestMapping(path = "")
-public class MessageController {
+public class MessageController implements CommunityConstant {
     @Autowired
     private MessageService messageService;
 
@@ -168,9 +171,67 @@ public class MessageController {
     public String getNoticeList(Model model){
         User user = hostHolder.getUser();
 
-        List<Message> systemNotices = messageService.findSystemNotices(user.getId());
-
+        model.addAttribute("commentNotice",getMap(user.getId(),TOPIC_COMMENT));
+        model.addAttribute("likeNotice",getMap(user.getId(),TOPIC_LIKE));
+        model.addAttribute("followNotice",getMap(user.getId(),TOPIC_FOLLOW));
+        model.addAttribute("noticeUnreadCount",messageService.findNoticeUnreadCount(user.getId(), null));
         return "site/notice";
+    }
+
+
+    private Map<String,Object> getMap(int userId,String conversationId){
+        List<Message> systemNotices = messageService.findSystemNotices(userId,conversationId,0,PAGE_DONT_LIMIT);
+
+        if(!systemNotices.isEmpty()) {
+            for (Message systemNotice : systemNotices) {
+
+                Map content = JSON.parseObject(systemNotice.getContent().replaceAll("&quot;","\""),HashMap.class);
+                System.out.println(content.values());
+
+                Map<String,Object> map = new HashMap<>();
+
+                map.put("message",systemNotice);
+                map.put("user", userService.findUserById((Integer) content.get("userId")));
+                map.put("entityType",content.get("entityType"));
+                map.put("unread",messageService.findNoticeUnreadCount(userId, conversationId));
+                map.put("count",messageService.findNoticeCounts(userId,conversationId));
+                return map;
+            }
+        }
+        return null;
+    }
+
+    @RequestMapping(path = "/notice/detail/{conversationId}",method = RequestMethod.GET)
+    public String getNoticeDetail(@PathVariable(name = "conversationId")String conversationId,Model model,Page page){
+        page.setLimit(5);
+        page.setPath("/notice/detail/"+conversationId);
+        page.setRows(messageService.findNoticeCounts(hostHolder.getUser().getId(),conversationId));
+
+        List<Message> systemNotices = messageService.findSystemNotices(hostHolder.getUser().getId(), conversationId, page.getOffset(), page.getLimit());
+
+        List<Map<String,Object>> notices = new ArrayList<>();
+
+        if(!systemNotices.isEmpty()){
+            for (Message message : systemNotices) {
+                Map content = JSON.parseObject(message.getContent().replaceAll("&quot;","\""),HashMap.class);
+                Map<String,Object> map = new HashMap<>();
+                map.put("notice",message);
+                map.put("fromUser",userService.findUserById(message.getFromId()));
+                map.put("entityType",content.get("entityType"));
+                map.put("user", userService.findUserById((Integer) content.get("userId")));
+                map.put("postId",content.get("postId"));
+                notices.add(map);
+            }
+        }
+        model.addAttribute("notices",notices);
+
+        model.addAttribute("topic",conversationId);
+
+        List<Integer> ids = getLetterIds(systemNotices);
+        if (!ids.isEmpty()) {
+            messageService.readMessage(ids);
+        }
+        return "site/notice-detail";
     }
 
 }

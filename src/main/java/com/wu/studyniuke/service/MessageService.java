@@ -52,8 +52,16 @@ public class MessageService {
         return messageMapper.updateStatus(ids,1);
     }
 
-    public List<Message> findSystemNotices(int userId){
-        return messageMapper.selectSystemNotices(userId);
+    public List<Message> findSystemNotices(int userId,String conversationId,int offset,int limit){
+        return messageMapper.selectSystemNotices(userId,conversationId,offset,limit);
+    }
+
+    public int findNoticeUnreadCount(int userId,String conversationId){
+        return messageMapper.selectNoticeUnreadCount(userId,conversationId);
+    }
+
+    public int findNoticeCounts(int userId,String conversationId){
+        return messageMapper.selectNoticeCounts(userId,conversationId);
     }
 }
 

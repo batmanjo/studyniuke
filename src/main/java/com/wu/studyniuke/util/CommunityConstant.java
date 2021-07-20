@@ -36,6 +36,8 @@ public interface CommunityConstant {
     //系统用户ID
     int SYSTEM_ID = 1;
 
+    //是否进行分页
+    int PAGE_DONT_LIMIT = 0;
 
     //默认存储时间
     int DEFAULT_EXPIRED_SECONDS=3600*12;

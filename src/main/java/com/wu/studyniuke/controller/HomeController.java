@@ -5,8 +5,10 @@ import com.wu.studyniuke.entity.Page;
 import com.wu.studyniuke.entity.User;
 import com.wu.studyniuke.service.DiscussPostService;
 import com.wu.studyniuke.service.LikeService;
+import com.wu.studyniuke.service.MessageService;
 import com.wu.studyniuke.service.UserService;
 import com.wu.studyniuke.util.CommunityConstant;
+import com.wu.studyniuke.util.HostHolder;
 import org.apache.ibatis.annotations.AutomapConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -32,6 +34,10 @@ public class HomeController implements CommunityConstant {
     private UserService userService;
     @Autowired
     private LikeService likeService;
+    @Autowired
+    private MessageService messageService;
+    @Autowired
+    private HostHolder hostHolder;
 
     @RequestMapping(path = "/index", method = RequestMethod.GET)
     public String getIndexPage(Model model, Page page) {
@@ -53,20 +59,20 @@ public class HomeController implements CommunityConstant {
                 map.put("likeCount", likeCount);
 
                 discussPosts.add(map);
+
             }
         }
 
+        if(hostHolder.getUser() != null){
+            int noticeUnreadCounts = messageService.findNoticeUnreadCount(hostHolder.getUser().getId(), null);
+            int letterUnreadCount  = messageService.findLetterUnreadCount(hostHolder.getUser().getId(), null);
+            int count = noticeUnreadCounts+letterUnreadCount;
 
-//        HashMap<String, Object> map2 = new HashMap<>();
-//        User user1 = new User();
-//        user1.setUsername("张三");
-//        map2.put("user1",user1);
-//        model.addAttribute("hello",map2);
-//        System.out.println(map2.get("user1"));
-//          System.out.println(discussPosts);
-
+            model.addAttribute("allUnreadCount", count);
+        }
 
         model.addAttribute("discussPosts", discussPosts);
+
         return "/index";
     }
 
