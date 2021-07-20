@@ -25,4 +25,6 @@ public interface MessageMapper {
     int insertMessage(Message message);
 
     int updateStatus(List<Integer> ids,int status);
+
+    List<Message> selectSystemNotices(int useId);
 }

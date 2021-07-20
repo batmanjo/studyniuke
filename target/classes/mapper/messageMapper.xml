@@ -9,7 +9,8 @@
     </sql>
 
     <sql id="insertFields">
-        from_id,to_id,conversation_id,content,status,create_time
+        from_id
+        ,to_id,conversation_id,content,status,create_time
     </sql>
 
     <select id="selectConversations" resultType="Message">
@@ -69,7 +70,7 @@
             and conversation_id = #{conversationId}
         </if>
     </select>
-    
+
     <insert id="insertMessage" parameterType="Message" keyProperty="id">
         insert into message (<include refid="insertFields"></include>)
         values (#{fromId},#{toId},#{conversationId},#{content},#{status},#{createTime})
@@ -77,9 +78,23 @@
 
     <update id="updateStatus">
         update message set status = #{status}
-        where id in 
+        where id in
         <foreach collection="ids" item="id" open="(" separator="," close=")">
             #{id}
         </foreach>
     </update>
+
+    <select id="selectSystemNotices" resultType="Message">
+        select
+        <include refid="selectFields"></include>
+        from message
+        where id in (
+        select max(id) from message
+        where to_id = #{userId}
+        and from_id = 1
+        group by conversation_id
+        )
+        order by id desc
+    </select>
+
 </mapper>

@@ -2,8 +2,12 @@ package com.wu.studyniuke.controller;
 
 import com.wu.studyniuke.entity.Comment;
 import com.wu.studyniuke.entity.DiscussPost;
+import com.wu.studyniuke.entity.Event;
 import com.wu.studyniuke.entity.User;
+import com.wu.studyniuke.event.EventProducer;
 import com.wu.studyniuke.service.CommentService;
+import com.wu.studyniuke.service.DiscussPostService;
+import com.wu.studyniuke.util.CommunityConstant;
 import com.wu.studyniuke.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -20,13 +24,19 @@ import java.util.Date;
  */
 @RequestMapping("/comment")
 @Controller
-public class CommentController {
+public class CommentController implements CommunityConstant {
 
     @Autowired
     private CommentService commentService;
 
     @Autowired
     private HostHolder hostHolder;
+
+    @Autowired
+    private EventProducer eventProducer;
+
+    @Autowired
+    private DiscussPostService discussPostService;
 
     @RequestMapping(path = "/add/{discussPostId}",method = RequestMethod.POST)
     public String addComment(@PathVariable("discussPostId") String discussPostId, Comment comment){
@@ -35,6 +45,29 @@ public class CommentController {
         comment.setStatus(0);
 
         commentService.addComment(comment);
+
+        //触发评论事件
+        Event event = new Event();
+        event.setUserId(hostHolder.getUser().getId());
+        event.setTopic(TOPIC_COMMENT);
+        event.setEntityType(comment.getEntityType());
+        event.setEntityId(comment.getEntityId());
+        event.setData("postId",discussPostId);
+
+        if(comment.getEntityType() == ENTITY_TYPE_POST){
+            event.setEntityUserId(discussPostService.queryDiscussPost(comment.getEntityId()).getUserId());
+        } else if(comment.getEntityType() == ENTITY_TYPE_COMMENT){
+            event.setEntityUserId(commentService.queryCommentById(comment.getEntityId()).getUserId());
+        }
+
+        eventProducer.fireEvent(event);
+
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         return "redirect:/discuss/detail/"+ discussPostId;
     }
 }

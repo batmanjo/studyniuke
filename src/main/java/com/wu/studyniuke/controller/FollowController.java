@@ -1,7 +1,9 @@
 package com.wu.studyniuke.controller;
 
+import com.wu.studyniuke.entity.Event;
 import com.wu.studyniuke.entity.Page;
 import com.wu.studyniuke.entity.User;
+import com.wu.studyniuke.event.EventProducer;
 import com.wu.studyniuke.service.FollowService;
 import com.wu.studyniuke.service.UserService;
 import com.wu.studyniuke.util.CommunityConstant;
@@ -35,18 +37,32 @@ public class FollowController implements CommunityConstant {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private EventProducer eventProducer;
+
+
     @RequestMapping(path = "/follow",method = RequestMethod.POST)
     @ResponseBody
-    public String unfollow(int entityId,int entityType){
+    public String follow(int entityId,int entityType){
         User user = hostHolder.getUser();
 
         followService.follow(user.getId(),entityType,entityId);
+
+        Event event = new Event();
+        event.setTopic(TOPIC_FOLLOW);
+        event.setEntityId(entityId);
+        event.setEntityType(entityType);
+        event.setUserId(user.getId());
+        event.setEntityUserId(entityId);
+
+        eventProducer.fireEvent(event);
+
         return CommunityUtil.getJSONString(0,"关注成功");
     }
 
     @RequestMapping(path = "/unfollow",method = RequestMethod.POST)
     @ResponseBody
-    public String follow(int entityId,int entityType){
+    public String unfollow(int entityId,int entityType){
         User user = hostHolder.getUser();
 
         followService.unfollow(user.getId(),entityType,entityId);

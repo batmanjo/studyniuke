@@ -51,5 +51,9 @@ public class MessageService {
     public int readMessage(List<Integer> ids){
         return messageMapper.updateStatus(ids,1);
     }
+
+    public List<Message> findSystemNotices(int userId){
+        return messageMapper.selectSystemNotices(userId);
+    }
 }
 

@@ -33,6 +33,10 @@ public interface CommunityConstant {
      */
     String TOPIC_FOLLOW = "follow";
 
+    //系统用户ID
+    int SYSTEM_ID = 1;
+
+
     //默认存储时间
     int DEFAULT_EXPIRED_SECONDS=3600*12;
     //勾选后的登录凭证超时时间
