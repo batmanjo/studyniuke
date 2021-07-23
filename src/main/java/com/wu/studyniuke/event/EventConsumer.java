@@ -2,8 +2,11 @@ package com.wu.studyniuke.event;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.wu.studyniuke.entity.DiscussPost;
 import com.wu.studyniuke.entity.Event;
 import com.wu.studyniuke.entity.Message;
+import com.wu.studyniuke.service.DiscussPostService;
+import com.wu.studyniuke.service.ElasticSearchService;
 import com.wu.studyniuke.service.MessageService;
 import com.wu.studyniuke.util.CommunityConstant;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -28,6 +31,12 @@ public class EventConsumer implements CommunityConstant {
 
     @Autowired
     private MessageService messageService;
+
+    @Autowired
+    private DiscussPostService discussPostService;
+
+    @Autowired
+    private ElasticSearchService elasticSearchService;
 
     @KafkaListener(topics = {TOPIC_COMMENT, TOPIC_LIKE, TOPIC_FOLLOW})
     public void handleSystemNotice(ConsumerRecord consumerRecord) {
@@ -66,6 +75,23 @@ public class EventConsumer implements CommunityConstant {
         message.setContent(JSONObject.toJSONString(content));
 
         messageService.addMessage(message);
+    }
+
+    @KafkaListener(topics = {TOPIC_PUBLISH})
+    public void handlePublishMessage(ConsumerRecord record) {
+        if (record == null || record.value() == null) {
+            LOGGER.error("消息内容为空!");
+            return;
+        }
+
+        Event event = JSONObject.parseObject(record.value().toString(), Event.class);
+        if (event == null) {
+            LOGGER.error("消息格式错误！");
+            return;
+        }
+        // 搜索引擎保存帖子信息
+        DiscussPost post = discussPostService.queryDiscussPost(event.getEntityId());
+        elasticSearchService.saveDiscussPost(post);
     }
 
 

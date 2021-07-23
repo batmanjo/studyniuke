@@ -9,6 +9,7 @@ import com.wu.studyniuke.service.CommentService;
 import com.wu.studyniuke.service.DiscussPostService;
 import com.wu.studyniuke.util.CommunityConstant;
 import com.wu.studyniuke.util.HostHolder;
+import com.wu.studyniuke.util.RedisKeyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
@@ -38,8 +39,8 @@ public class CommentController implements CommunityConstant {
     @Autowired
     private DiscussPostService discussPostService;
 
-    @RequestMapping(path = "/add/{discussPostId}",method = RequestMethod.POST)
-    public String addComment(@PathVariable("discussPostId") String discussPostId, Comment comment){
+    @RequestMapping(path = "/add/{discussPostId}", method = RequestMethod.POST)
+    public String addComment(@PathVariable("discussPostId") int discussPostId, Comment comment) {
         comment.setUserId(hostHolder.getUser().getId());
         comment.setCreateTime(new Date());
         comment.setStatus(0);
@@ -52,22 +53,27 @@ public class CommentController implements CommunityConstant {
         event.setTopic(TOPIC_COMMENT);
         event.setEntityType(comment.getEntityType());
         event.setEntityId(comment.getEntityId());
-        event.setData("postId",discussPostId);
+        event.setData("postId", discussPostId);
 
-        if(comment.getEntityType() == ENTITY_TYPE_POST){
+        if (comment.getEntityType() == ENTITY_TYPE_POST) {
             event.setEntityUserId(discussPostService.queryDiscussPost(comment.getEntityId()).getUserId());
-        } else if(comment.getEntityType() == ENTITY_TYPE_COMMENT){
+        } else if (comment.getEntityType() == ENTITY_TYPE_COMMENT) {
             event.setEntityUserId(commentService.queryCommentById(comment.getEntityId()).getUserId());
         }
 
         eventProducer.fireEvent(event);
 
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        if (comment.getEntityType() == ENTITY_TYPE_POST) {
+            // 触发发帖事件
+            event = new Event();
+            event.setTopic(TOPIC_PUBLISH);
+            event.setUserId(comment.getUserId());
+            event.setEntityType(ENTITY_TYPE_POST);
+            event.setEntityId(discussPostId);
+            eventProducer.fireEvent(event);
+
         }
 
-        return "redirect:/discuss/detail/"+ discussPostId;
+        return "redirect:/discuss/detail/" + discussPostId;
     }
 }

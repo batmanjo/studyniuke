@@ -1,9 +1,7 @@
 package com.wu.studyniuke.controller;
 
-import com.wu.studyniuke.entity.Comment;
-import com.wu.studyniuke.entity.DiscussPost;
-import com.wu.studyniuke.entity.Page;
-import com.wu.studyniuke.entity.User;
+import com.wu.studyniuke.entity.*;
+import com.wu.studyniuke.event.EventProducer;
 import com.wu.studyniuke.service.CommentService;
 import com.wu.studyniuke.service.DiscussPostService;
 import com.wu.studyniuke.service.LikeService;
@@ -43,15 +41,18 @@ public class DiscussPostController implements CommunityConstant {
     @Autowired
     private LikeService likeService;
 
-    @RequestMapping(path = "/add",method = RequestMethod.POST)
+    @Autowired
+    private EventProducer eventProducer;
+
+    @RequestMapping(path = "/add", method = RequestMethod.POST)
     @ResponseBody
-    public String addDiscussPost(String title,String content){
-        User user =hostHolder.getUser();
-        if(user==null){
-            return CommunityUtil.getJSONString(403,"unLogin");
+    public String addDiscussPost(String title, String content) {
+        User user = hostHolder.getUser();
+        if (user == null) {
+            return CommunityUtil.getJSONString(403, "unLogin");
         }
-        if(title==null||content==null){
-            return CommunityUtil.getJSONString(403,"不能为空");
+        if (title == null || content == null) {
+            return CommunityUtil.getJSONString(403, "不能为空");
         }
         DiscussPost discussPost = new DiscussPost();
         discussPost.setTitle(title);
@@ -60,36 +61,46 @@ public class DiscussPostController implements CommunityConstant {
         discussPost.setUserId(user.getId());
 
         discussPostService.addDiscussPost(discussPost);
-        return CommunityUtil.getJSONString(0,"success");
+
+        // 触发发帖事件
+        Event event = new Event();
+        event.setTopic(TOPIC_PUBLISH);
+        event.setUserId(user.getId());
+        event.setEntityType(ENTITY_TYPE_POST);
+        event.setEntityId(discussPost.getId());
+
+        eventProducer.fireEvent(event);
+
+        return CommunityUtil.getJSONString(0, "success");
 
     }
 
-    @RequestMapping(path="/detail/{discussId}",method = RequestMethod.GET)
-    public String showDiscussPost(@PathVariable("discussId") int discussId, Model model, Page page){
+    @RequestMapping(path = "/detail/{discussId}", method = RequestMethod.GET)
+    public String showDiscussPost(@PathVariable("discussId") int discussId, Model model, Page page) {
         //帖子
         DiscussPost post = discussPostService.queryDiscussPost(discussId);
-        model.addAttribute("post",post);
+        model.addAttribute("post", post);
         //帖子的作者
         User user = userService.findUserById(post.getUserId());
-        model.addAttribute("user",user);
+        model.addAttribute("user", user);
         //点赞
         long likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_POST, discussId);
-        model.addAttribute("likeCount",likeCount);
+        model.addAttribute("likeCount", likeCount);
 
         int likeStatus = hostHolder.getUser() == null ?
-                0 : likeService.findEntityLikeStatus(hostHolder.getUser().getId(),ENTITY_TYPE_POST,discussId);
-        model.addAttribute("likeStatus",likeStatus);
+                0 : likeService.findEntityLikeStatus(hostHolder.getUser().getId(), ENTITY_TYPE_POST, discussId);
+        model.addAttribute("likeStatus", likeStatus);
 
 
         //评论分页显示
-        page.setPath("/discuss/detail/"+discussId);
+        page.setPath("/discuss/detail/" + discussId);
         page.setRows(post.getCommentCount());
         page.setLimit(5);
         List<Comment> comments =
                 commentService.queryCommentByEntity(ENTITY_TYPE_POST, discussId, page.getOffset(), page.getLimit());
 
-        List<Map<String,Object>> commentVoList = new ArrayList<>();
-        if(comments!=null){
+        List<Map<String, Object>> commentVoList = new ArrayList<>();
+        if (comments != null) {
             for (Comment comment : comments) {
                 // 评论VO
                 Map<String, Object> commentVo = new HashMap<>();
