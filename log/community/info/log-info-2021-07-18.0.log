@@ -1,0 +1,1160 @@
+2021-07-18 08:36:10,977 INFO [lettuce-nioEventLoop-4-1] i.l.c.p.CommandHandler [AbstractInternalLogger.java:217] null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-18 08:36:11,044 INFO [lettuce-eventExecutorLoop-1-2] i.l.c.p.ConnectionWatchdog [AbstractInternalLogger.java:171] Reconnecting, last destination was localhost/127.0.0.1:6379
+2021-07-18 21:07:59,462 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:55] Starting StudyniukeApplication using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 22468 (D:\Softwares\IDEA\mavenProject\studyniuke\target\classes started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
+2021-07-18 21:07:59,479 INFO [main] c.w.s.StudyniukeApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-07-18 21:08:00,468 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-18 21:08:00,472 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-18 21:08:00,511 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2021-07-18 21:08:01,260 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 9999 (http)
+2021-07-18 21:08:01,270 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9999"]
+2021-07-18 21:08:01,271 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-07-18 21:08:01,272 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-07-18 21:08:01,403 INFO [main] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-07-18 21:08:01,404 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1833 ms
+2021-07-18 21:08:02,250 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
+2021-07-18 21:08:02,498 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-18 21:08:02,612 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-07-18 21:08:03,038 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9999"]
+2021-07-18 21:08:03,058 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 9999 (http) with context path '/wu'
+2021-07-18 21:08:03,070 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:61] Started StudyniukeApplication in 4.239 seconds (JVM running for 6.076)
+2021-07-18 21:12:25,875 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:55] Starting StudyniukeApplication using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 25216 (D:\Softwares\IDEA\mavenProject\studyniuke\target\classes started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
+2021-07-18 21:12:25,879 INFO [main] c.w.s.StudyniukeApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-07-18 21:12:26,824 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-18 21:12:26,828 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-18 21:12:26,872 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2021-07-18 21:12:27,724 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 9999 (http)
+2021-07-18 21:12:27,736 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9999"]
+2021-07-18 21:12:27,737 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-07-18 21:12:27,738 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-07-18 21:12:27,896 INFO [main] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-07-18 21:12:27,897 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1951 ms
+2021-07-18 21:12:28,982 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
+2021-07-18 21:12:29,311 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-18 21:12:29,465 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-07-18 21:12:29,997 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9999"]
+2021-07-18 21:12:30,015 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 9999 (http) with context path '/wu'
+2021-07-18 21:12:30,027 INFO [main] c.w.s.StudyniukeApplication [StartupInfoLogger.java:61] Started StudyniukeApplication in 4.875 seconds (JVM running for 6.985)
+2021-07-18 21:12:34,173 INFO [http-nio-9999-exec-1] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-18 21:12:34,173 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-07-18 21:12:34,175 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2 ms
+2021-07-18 21:12:34,235 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:34],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPostRows].
+2021-07-18 21:12:34,305 INFO [http-nio-9999-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-07-18 21:12:34,618 INFO [http-nio-9999-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-07-18 21:12:34,674 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:34],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPosts].
+2021-07-18 21:12:34,691 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:34],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:12:36,267 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:12:36,273 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:12:36,275 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:12:36,277 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:12:36,279 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:12:36,280 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:12:36,283 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:12:36,284 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:12:36,286 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:12:36,288 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:12:36,289 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:12:36,291 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:12:36,293 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:12:36,295 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:12:36,296 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:12:36,298 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:12:36,300 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:12:36,301 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:12:36,303 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:12:36],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:11,066 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPostRows].
+2021-07-18 21:13:11,071 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPosts].
+2021-07-18 21:13:11,081 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:11,083 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:11,084 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:11,086 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:11,088 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:11,090 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:11,092 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:11,094 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:11,096 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:11,098 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:11,099 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:11,104 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:11,106 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:11,109 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:11,110 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:11,112 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:11,113 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:11,115 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:11,117 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:11,119 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:25,903 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPostRows].
+2021-07-18 21:13:25,907 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPosts].
+2021-07-18 21:13:25,914 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:25,916 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:25,918 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:25,921 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:25,923 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:25,924 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:25,926 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:25,927 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:25,929 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:25,931 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:25,932 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:25,934 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:25,937 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:25,940 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:25,942 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:25,944 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:25,946 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:25,948 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:25,949 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:25,952 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:25],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:48,308 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPostRows].
+2021-07-18 21:13:48,313 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPosts].
+2021-07-18 21:13:48,319 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:48,322 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:48,323 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:48,325 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:48,327 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:48,329 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:48,331 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:48,332 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:48,334 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:48,336 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:48,337 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:48,340 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:48,342 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:48,344 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:48,346 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:48,348 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:48,350 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:48,352 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:13:48,354 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:13:48,357 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:13:48],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:09,056 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPostRows].
+2021-07-18 21:14:09,061 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPosts].
+2021-07-18 21:14:09,068 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:09,071 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:09,073 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:09,075 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:09,077 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:09,079 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:09,080 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:09,083 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:09,085 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:09,087 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:09,089 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:09,091 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:09,093 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:09,095 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:09,096 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:09,098 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:09,100 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:09,101 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:09,103 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:09,104 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:09],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:41,141 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.login].
+2021-07-18 21:14:41,177 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:14:41,181 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:41,182 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPostRows].
+2021-07-18 21:14:41,185 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPosts].
+2021-07-18 21:14:41,189 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:41,190 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:41,191 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:41,192 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:41,193 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:41,195 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:41,196 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:41,198 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:41,199 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:41,200 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:41,201 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:41,202 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:41,203 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:41,204 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:41,206 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:41,207 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:41,208 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:41,209 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:41,211 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:41,213 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:41,243 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:14:41,246 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:41,252 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:14:41,254 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:41],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,604 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:14:44,605 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,613 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.DiscussPostService.queryDiscussPost].
+2021-07-18 21:14:44,618 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,620 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:44,621 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:14:44,623 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.CommentService.queryCommentByEntity].
+2021-07-18 21:14:44,633 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,634 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:44,635 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:14:44,637 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.CommentService.queryCommentByEntity].
+2021-07-18 21:14:44,643 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,645 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:44,646 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:14:44,648 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,649 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:44,650 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:14:44,651 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,652 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,653 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:44,654 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:14:44,656 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,657 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,658 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:44,659 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:14:44,660 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.CommentService.queryCommentCount].
+2021-07-18 21:14:44,664 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,665 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:44,666 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:14:44,667 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.CommentService.queryCommentByEntity].
+2021-07-18 21:14:44,670 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,671 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,672 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:44,673 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:14:44,675 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,676 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,677 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:44,679 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:14:44,681 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.CommentService.queryCommentCount].
+2021-07-18 21:14:44,683 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,684 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:44,685 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:14:44,686 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.CommentService.queryCommentByEntity].
+2021-07-18 21:14:44,689 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.CommentService.queryCommentCount].
+2021-07-18 21:14:44,691 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,692 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:44,693 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:14:44,694 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.CommentService.queryCommentByEntity].
+2021-07-18 21:14:44,697 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.CommentService.queryCommentCount].
+2021-07-18 21:14:44,700 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:14:44,701 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:14:44,702 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:14:44,703 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.CommentService.queryCommentByEntity].
+2021-07-18 21:14:44,705 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.CommentService.queryCommentCount].
+2021-07-18 21:14:44,747 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:14:44,749 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:14:44],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:21,930 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:15:21,931 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:21,934 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPostRows].
+2021-07-18 21:15:21,937 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPosts].
+2021-07-18 21:15:21,942 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:21,944 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:21,945 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:21,946 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:21,948 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:21,950 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:21,951 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:21,953 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:21,955 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:21,956 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:21,957 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:21,958 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:21,959 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:21,961 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:21,962 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:21,963 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:21,964 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:21,966 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:21,967 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:21,968 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:21,997 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:15:21,999 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:15:21,999 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:21],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:22,001 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:22],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,160 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:15:26,161 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,163 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPostRows].
+2021-07-18 21:15:26,166 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPosts].
+2021-07-18 21:15:26,171 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,173 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,174 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,175 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,176 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,178 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,179 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,180 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,182 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,183 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,185 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,186 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,187 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,188 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,189 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,190 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,191 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,192 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,193 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,193 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,225 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:15:26,227 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,227 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:15:26,229 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,908 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:15:26,910 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,911 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPostRows].
+2021-07-18 21:15:26,916 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPosts].
+2021-07-18 21:15:26,921 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,922 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,924 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,925 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,926 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,928 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,929 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,930 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,932 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,934 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,936 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,937 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,939 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,940 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,941 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,942 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,944 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,945 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,946 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,948 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:26,985 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:15:26,986 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:15:26,986 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:26,988 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:26],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:27,935 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:15:27,936 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:27,938 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPostRows].
+2021-07-18 21:15:27,942 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPosts].
+2021-07-18 21:15:27,947 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:27,948 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:27,950 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:27,952 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:27,953 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:27,955 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:27,956 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:27,957 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:27,958 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:27,959 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:27,961 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:27,963 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:27,964 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:27,966 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:27,967 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:27,969 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:27,970 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:27,971 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:27,972 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:27,974 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:27],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:15:28,004 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:28],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:15:28,007 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:28],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:15:28,009 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:28],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:15:28,009 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:15:28],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,296 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:16:11,297 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,299 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.DiscussPostService.queryDiscussPost].
+2021-07-18 21:16:11,303 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,305 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:11,306 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:16:11,307 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.CommentService.queryCommentByEntity].
+2021-07-18 21:16:11,313 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,314 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:11,315 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:16:11,316 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.CommentService.queryCommentByEntity].
+2021-07-18 21:16:11,320 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,322 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:11,323 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:16:11,324 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,325 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:11,325 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:16:11,327 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,328 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,329 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:11,330 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:16:11,330 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,331 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,332 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:11,333 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:16:11,334 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.CommentService.queryCommentCount].
+2021-07-18 21:16:11,337 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,338 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:11,339 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:16:11,340 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.CommentService.queryCommentByEntity].
+2021-07-18 21:16:11,343 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,344 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,345 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:11,345 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:16:11,346 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,347 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,348 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:11,349 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:16:11,350 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.CommentService.queryCommentCount].
+2021-07-18 21:16:11,352 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,353 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:11,354 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:16:11,355 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.CommentService.queryCommentByEntity].
+2021-07-18 21:16:11,358 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.CommentService.queryCommentCount].
+2021-07-18 21:16:11,360 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,360 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:11,361 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:16:11,362 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.CommentService.queryCommentByEntity].
+2021-07-18 21:16:11,364 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.CommentService.queryCommentCount].
+2021-07-18 21:16:11,367 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:11,368 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:11,369 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeStatus].
+2021-07-18 21:16:11,370 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.CommentService.queryCommentByEntity].
+2021-07-18 21:16:11,373 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.CommentService.queryCommentCount].
+2021-07-18 21:16:11,407 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:16:11,408 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:11],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,657 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:16:57,658 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,660 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPostRows].
+2021-07-18 21:16:57,666 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.DiscussPostService.selectDiscussPosts].
+2021-07-18 21:16:57,670 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,671 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:57,672 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,674 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:57,675 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,677 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:57,678 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,679 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:57,680 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,682 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:57,683 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,684 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:57,685 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,686 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:57,687 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,688 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:57,688 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,689 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:57,690 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,691 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.LikeService.findEntityLikeCount].
+2021-07-18 21:16:57,716 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:16:57,718 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:16:57,723 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:16:57,725 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:16:57],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:17:00,890 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:17:00],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:17:00,892 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:17:00],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-18 21:17:00,894 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:17:00],访问了[com.wu.studyniuke.service.UserService.logout].
+2021-07-18 21:17:00,901 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:17:00],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:17:00,926 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:17:00],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:17:04,098 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-18 21:17:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-18 21:36:34,245 INFO [main] c.w.s.KafkaTest [StartupInfoLogger.java:55] Starting KafkaTest using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 27016 (started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
+2021-07-18 21:36:34,251 INFO [main] c.w.s.KafkaTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-07-18 21:36:35,506 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-18 21:36:35,513 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-18 21:36:35,563 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2021-07-18 21:36:38,291 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
+2021-07-18 21:36:39,124 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-18 21:36:39,338 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-07-18 21:36:40,172 INFO [main] c.w.s.KafkaTest [StartupInfoLogger.java:61] Started KafkaTest in 6.566 seconds (JVM running for 8.104)
+2021-07-18 21:36:40,539 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:354] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-07-18 21:36:41,298 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-18 21:36:41,300 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-18 21:36:41,301 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1626615401295
+2021-07-18 21:36:41,963 INFO [kafka-producer-network-thread | producer-1] o.a.k.c.Metadata [Metadata.java:279] [Producer clientId=producer-1] Cluster ID: yP_Ys23pRhG47-k_9GLltA
+2021-07-18 21:36:45,006 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-18 21:36:45,037 INFO [SpringContextShutdownHook] o.a.k.c.p.KafkaProducer [KafkaProducer.java:1189] [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-07-18 21:37:30,360 INFO [main] c.w.s.KafkaTest [StartupInfoLogger.java:55] Starting KafkaTest using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 22608 (started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
+2021-07-18 21:37:30,366 INFO [main] c.w.s.KafkaTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-07-18 21:37:31,549 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-18 21:37:31,555 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-18 21:37:31,599 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2021-07-18 21:37:34,202 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
+2021-07-18 21:37:35,038 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-18 21:37:35,224 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-07-18 21:37:36,056 INFO [main] c.w.s.KafkaTest [StartupInfoLogger.java:61] Started KafkaTest in 6.329 seconds (JVM running for 7.696)
+2021-07-18 21:37:36,436 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:354] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-07-18 21:37:37,138 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-18 21:37:37,140 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-18 21:37:37,140 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1626615457134
+2021-07-18 21:37:37,755 INFO [kafka-producer-network-thread | producer-1] o.a.k.c.Metadata [Metadata.java:279] [Producer clientId=producer-1] Cluster ID: yP_Ys23pRhG47-k_9GLltA
+2021-07-18 21:37:47,804 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-18 21:37:47,841 INFO [SpringContextShutdownHook] o.a.k.c.p.KafkaProducer [KafkaProducer.java:1189] [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-07-18 21:39:20,233 INFO [main] c.w.s.KafkaTest [StartupInfoLogger.java:55] Starting KafkaTest using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 25460 (started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
+2021-07-18 21:39:20,238 INFO [main] c.w.s.KafkaTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-07-18 21:39:21,575 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-18 21:39:21,580 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-18 21:39:21,634 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2021-07-18 21:39:24,591 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
+2021-07-18 21:39:25,508 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-18 21:39:25,757 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-07-18 21:39:27,463 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:354] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-07-18 21:39:27,685 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-18 21:39:27,688 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-18 21:39:27,689 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1626615567682
+2021-07-18 21:39:27,696 INFO [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:965] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Subscribed to topic(s): test
+2021-07-18 21:39:27,707 INFO [main] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2021-07-18 21:39:27,734 INFO [main] c.w.s.KafkaTest [StartupInfoLogger.java:61] Started KafkaTest in 8.232 seconds (JVM running for 9.756)
+2021-07-18 21:39:28,093 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:354] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-07-18 21:39:28,141 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-18 21:39:28,141 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-18 21:39:28,142 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1626615568140
+2021-07-18 21:39:28,496 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:279] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Cluster ID: yP_Ys23pRhG47-k_9GLltA
+2021-07-18 21:39:28,496 INFO [kafka-producer-network-thread | producer-1] o.a.k.c.Metadata [Metadata.java:279] [Producer clientId=producer-1] Cluster ID: yP_Ys23pRhG47-k_9GLltA
+2021-07-18 21:39:28,499 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Discovered group coordinator 192.168.17.1:9092 (id: 2147483647 rack: null)
+2021-07-18 21:39:28,504 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-07-18 21:39:28,526 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:456] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2021-07-18 21:39:28,527 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-07-18 21:39:28,545 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:627] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Finished assignment for group at generation 1: {consumer-test-consumer-group-1-a50e2bb9-3e7e-478b-a83b-ced0c2a96462=Assignment(partitions=[test-0])}
+2021-07-18 21:39:28,554 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:504] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Successfully joined group with generation 1
+2021-07-18 21:39:28,555 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:276] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Notifying assignor about the new Assignment(partitions=[test-0])
+2021-07-18 21:39:28,560 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:288] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Adding newly assigned partitions: test-0
+2021-07-18 21:39:28,573 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:1349] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Found no committed offset for partition test-0
+2021-07-18 21:39:28,587 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.SubscriptionState [SubscriptionState.java:397] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Resetting offset for partition test-0 to offset 16.
+2021-07-18 21:39:28,588 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions assigned: [test-0]
+2021-07-18 21:39:38,562 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:307] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Revoke previously assigned partitions test-0
+2021-07-18 21:39:38,563 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions revoked: [test-0]
+2021-07-18 21:39:38,564 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:1005] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Member consumer-test-consumer-group-1-a50e2bb9-3e7e-478b-a83b-ced0c2a96462 sending LeaveGroup request to coordinator 192.168.17.1:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2021-07-18 21:39:38,565 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1074] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2021-07-18 21:39:38,566 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService
+2021-07-18 21:39:38,590 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:292] test-consumer-group: Consumer stopped
+2021-07-18 21:39:38,594 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-18 21:39:38,632 INFO [SpringContextShutdownHook] o.a.k.c.p.KafkaProducer [KafkaProducer.java:1189] [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-07-18 21:43:01,796 INFO [main] c.w.s.KafkaTest [StartupInfoLogger.java:55] Starting KafkaTest using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 29056 (started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
+2021-07-18 21:43:01,803 INFO [main] c.w.s.KafkaTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-07-18 21:43:03,098 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-18 21:43:03,106 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-18 21:43:03,163 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2021-07-18 21:43:06,288 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
+2021-07-18 21:43:07,276 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-18 21:43:07,555 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-07-18 21:43:09,391 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:354] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-07-18 21:43:09,663 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-18 21:43:09,666 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-18 21:43:09,667 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1626615789660
+2021-07-18 21:43:09,675 INFO [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:965] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Subscribed to topic(s): test
+2021-07-18 21:43:09,691 INFO [main] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2021-07-18 21:43:09,728 INFO [main] c.w.s.KafkaTest [StartupInfoLogger.java:61] Started KafkaTest in 8.577 seconds (JVM running for 10.097)
+2021-07-18 21:43:10,102 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:354] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-07-18 21:43:10,149 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-18 21:43:10,150 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-18 21:43:10,151 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1626615790149
+2021-07-18 21:43:10,488 INFO [kafka-producer-network-thread | producer-1] o.a.k.c.Metadata [Metadata.java:279] [Producer clientId=producer-1] Cluster ID: yP_Ys23pRhG47-k_9GLltA
+2021-07-18 21:43:10,488 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:279] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Cluster ID: yP_Ys23pRhG47-k_9GLltA
+2021-07-18 21:43:10,490 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Discovered group coordinator 192.168.17.1:9092 (id: 2147483647 rack: null)
+2021-07-18 21:43:10,494 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-07-18 21:43:10,509 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:456] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2021-07-18 21:43:10,510 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-07-18 21:43:10,519 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:627] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Finished assignment for group at generation 3: {consumer-test-consumer-group-1-bd3da938-c089-4edf-936d-0aac2a64e932=Assignment(partitions=[test-0])}
+2021-07-18 21:43:10,524 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:504] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Successfully joined group with generation 3
+2021-07-18 21:43:10,525 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:276] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Notifying assignor about the new Assignment(partitions=[test-0])
+2021-07-18 21:43:10,531 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:288] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Adding newly assigned partitions: test-0
+2021-07-18 21:43:10,544 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Setting offset for partition test-0 to the committed offset FetchPosition{offset=16, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.17.1:9092 (id: 0 rack: null)], epoch=0}}
+2021-07-18 21:43:10,546 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions assigned: [test-0]
+2021-07-18 21:43:20,545 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:307] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Revoke previously assigned partitions test-0
+2021-07-18 21:43:20,545 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions revoked: [test-0]
+2021-07-18 21:43:20,546 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:1005] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Member consumer-test-consumer-group-1-bd3da938-c089-4edf-936d-0aac2a64e932 sending LeaveGroup request to coordinator 192.168.17.1:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2021-07-18 21:43:20,548 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1074] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2021-07-18 21:43:20,548 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService
+2021-07-18 21:43:20,561 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:292] test-consumer-group: Consumer stopped
+2021-07-18 21:43:20,565 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-18 21:43:20,595 INFO [SpringContextShutdownHook] o.a.k.c.p.KafkaProducer [KafkaProducer.java:1189] [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-07-18 21:43:45,685 INFO [main] c.w.s.KafkaTest [StartupInfoLogger.java:55] Starting KafkaTest using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 2560 (started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
+2021-07-18 21:43:45,690 INFO [main] c.w.s.KafkaTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-07-18 21:43:46,946 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-18 21:43:46,953 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-18 21:43:47,002 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2021-07-18 21:43:49,615 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
+2021-07-18 21:43:50,462 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-18 21:43:50,667 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-07-18 21:43:52,101 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:354] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-07-18 21:43:52,307 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-18 21:43:52,309 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-18 21:43:52,310 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1626615832305
+2021-07-18 21:43:52,316 INFO [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:965] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Subscribed to topic(s): test
+2021-07-18 21:43:52,327 INFO [main] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2021-07-18 21:43:52,350 INFO [main] c.w.s.KafkaTest [StartupInfoLogger.java:61] Started KafkaTest in 7.279 seconds (JVM running for 8.657)
+2021-07-18 21:43:52,678 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:354] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-07-18 21:43:52,715 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-18 21:43:52,716 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-18 21:43:52,717 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1626615832715
+2021-07-18 21:43:53,043 INFO [kafka-producer-network-thread | producer-1] o.a.k.c.Metadata [Metadata.java:279] [Producer clientId=producer-1] Cluster ID: yP_Ys23pRhG47-k_9GLltA
+2021-07-18 21:43:53,043 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:279] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Cluster ID: yP_Ys23pRhG47-k_9GLltA
+2021-07-18 21:43:53,045 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Discovered group coordinator 192.168.17.1:9092 (id: 2147483647 rack: null)
+2021-07-18 21:43:53,050 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-07-18 21:43:53,066 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:456] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2021-07-18 21:43:53,066 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-07-18 21:43:53,075 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:627] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Finished assignment for group at generation 5: {consumer-test-consumer-group-1-d4b9ea8e-44e1-4820-b3cf-727651e93ec1=Assignment(partitions=[test-0])}
+2021-07-18 21:43:53,082 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:504] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Successfully joined group with generation 5
+2021-07-18 21:43:53,083 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:276] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Notifying assignor about the new Assignment(partitions=[test-0])
+2021-07-18 21:43:53,091 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:288] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Adding newly assigned partitions: test-0
+2021-07-18 21:43:53,106 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Setting offset for partition test-0 to the committed offset FetchPosition{offset=19, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[192.168.17.1:9092 (id: 0 rack: null)], epoch=0}}
+2021-07-18 21:43:53,129 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions assigned: [test-0]
+2021-07-18 22:00:33,086 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:307] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Revoke previously assigned partitions test-0
+2021-07-18 22:00:33,088 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions revoked: [test-0]
+2021-07-18 22:00:33,089 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:1005] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Member consumer-test-consumer-group-1-d4b9ea8e-44e1-4820-b3cf-727651e93ec1 sending LeaveGroup request to coordinator 192.168.17.1:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2021-07-18 22:00:33,089 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1074] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2021-07-18 22:00:33,090 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService
+2021-07-18 22:00:33,099 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:292] test-consumer-group: Consumer stopped
+2021-07-18 22:00:33,103 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-18 22:00:33,128 INFO [SpringContextShutdownHook] o.a.k.c.p.KafkaProducer [KafkaProducer.java:1189] [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.

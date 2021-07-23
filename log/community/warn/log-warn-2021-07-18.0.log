@@ -1,0 +1,2 @@
+2021-07-18 08:35:31,310 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:787] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h45m39s310ms550µs800ns).
+2021-07-18 08:36:13,099 WARN [lettuce-nioEventLoop-4-2] i.l.c.p.ConnectionWatchdog [AbstractInternalLogger.java:151] Cannot reconnect to [localhost:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
