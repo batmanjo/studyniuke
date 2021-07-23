@@ -19,9 +19,6 @@ import java.util.Date;
 @ContextConfiguration(classes = StudyniukeApplication.class)
 class StudyniukeApplicationTests implements ApplicationContextAware {
 
-//    @Test
-//    void contextLoads() {
-//    }
     private ApplicationContext applicationContext;
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
