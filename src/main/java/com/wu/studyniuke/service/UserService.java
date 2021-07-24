@@ -12,14 +12,12 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -231,4 +229,19 @@ public class UserService implements CommunityConstant {
         redisTemplate.delete(userKey);
     }
 
+    public Collection<? extends GrantedAuthority> getAuthorities(int userId){
+        User user = findUserById(userId);
+        List<GrantedAuthority> list = new ArrayList<>();
+        list.add((GrantedAuthority) () -> {
+             switch (user.getType()){
+                 case 2:
+                     return AUTHORITY_MODERATOR;
+                 case 1:
+                     return AUTHORITY_ADMIN;
+                 default:
+                     return AUTHORITY_USER;
+             }
+        });
+        return list;
+    }
 }
