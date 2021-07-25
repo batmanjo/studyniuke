@@ -161,5 +161,80 @@ public class DiscussPostController implements CommunityConstant {
 
     }
 
+    @RequestMapping(path = "/top",method = RequestMethod.POST)
+    @ResponseBody
+    public String setTop(int discussPostId){
+        discussPostService.updateType(discussPostId,TYPE_TOP);
+
+        Event event = new Event();
+        event.setTopic(TOPIC_PUBLISH);
+        event.setUserId(hostHolder.getUser().getId());
+        event.setEntityType(ENTITY_TYPE_POST);
+        event.setEntityId(discussPostId);
+        eventProducer.fireEvent(event);
+
+        return CommunityUtil.getJSONString(0);
+    }
+
+    @RequestMapping(path = "/untop",method = RequestMethod.POST)
+    @ResponseBody
+    public String setUnTop(int discussPostId){
+        discussPostService.updateType(discussPostId,TYPE_COMMON);
+
+        Event event = new Event();
+        event.setTopic(TOPIC_PUBLISH);
+        event.setUserId(hostHolder.getUser().getId());
+        event.setEntityType(ENTITY_TYPE_POST);
+        event.setEntityId(discussPostId);
+        eventProducer.fireEvent(event);
+
+        return CommunityUtil.getJSONString(0);
+    }
+
+    @RequestMapping(path = "/wonderful",method = RequestMethod.POST)
+    @ResponseBody
+    public String setWonderful(int discussPostId){
+        discussPostService.updateStatus(discussPostId,STATUS_ESSENCE);
+
+        Event event = new Event();
+        event.setTopic(TOPIC_PUBLISH);
+        event.setUserId(hostHolder.getUser().getId());
+        event.setEntityType(ENTITY_TYPE_POST);
+        event.setEntityId(discussPostId);
+        eventProducer.fireEvent(event);
+
+        return CommunityUtil.getJSONString(0);
+    }
+
+    @RequestMapping(path = "/unwonderful",method = RequestMethod.POST)
+    @ResponseBody
+    public String setUnWonderful(int discussPostId){
+        discussPostService.updateStatus(discussPostId,STATUS_COMMON);
+
+        Event event = new Event();
+        event.setTopic(TOPIC_PUBLISH);
+        event.setUserId(hostHolder.getUser().getId());
+        event.setEntityType(ENTITY_TYPE_POST);
+        event.setEntityId(discussPostId);
+        eventProducer.fireEvent(event);
+
+        return CommunityUtil.getJSONString(0);
+    }
+
+    @RequestMapping(path = "/delete",method = RequestMethod.POST)
+    @ResponseBody
+    public String setDelete(int discussPostId){
+        discussPostService.updateStatus(discussPostId,STATUS_BLOCK);
+
+        Event event = new Event();
+        event.setTopic(TOPIC_DELETE);
+        event.setUserId(hostHolder.getUser().getId());
+        event.setEntityType(ENTITY_TYPE_POST);
+        event.setEntityId(discussPostId);
+        eventProducer.fireEvent(event);
+
+        return CommunityUtil.getJSONString(0);
+    }
+
 
 }

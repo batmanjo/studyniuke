@@ -38,6 +38,8 @@ public interface CommunityConstant {
 
     String TOPIC_PUBLISH = "publish";
 
+    String TOPIC_DELETE = "delete";
+
     //系统用户ID
     int SYSTEM_ID = 1;
 
@@ -59,6 +61,17 @@ public interface CommunityConstant {
     //权限：管理员
     String AUTHORITY_MODERATOR = "moderator";
 
+    //置顶帖子
+    int TYPE_TOP = 1;
 
+    int TYPE_COMMON = 0;
+
+    int STATUS_COMMON = 0;
+
+    //精华帖子
+    int STATUS_ESSENCE = 1;
+
+    //拉黑帖子
+    int STATUS_BLOCK = 2;
 
 }
