@@ -26,7 +26,7 @@ function setTop() {
         //置顶
         $.post(
             CONTEXT_PATH + "/discuss/top",
-            {"id": $("#postId").val()},
+            {"discussPostId": $("#postId").val()},
             function (data) {
                 //从服务器返回的json字符串中取出code值
                 data = $.parseJSON(data);
@@ -41,7 +41,7 @@ function setTop() {
         //取消置顶
         $.post(
             CONTEXT_PATH + "/discuss/untop",
-            {"id": $("#postId").val()},
+            {"discussPostId": $("#postId").val()},
             function (data) {
                 //从服务器返回的json字符串中取出code值
                 data = $.parseJSON(data);
@@ -61,7 +61,7 @@ function setWonderful() {
         //加精
         $.post(
             CONTEXT_PATH + "/discuss/wonderful",
-            {"id": $("#postId").val()},
+            {"discussPostId": $("#postId").val()},
             function (data) {
                 data = $.parseJSON(data);
                 if (data.code == 0) {
@@ -75,7 +75,7 @@ function setWonderful() {
         //取消加精
         $.post(
             CONTEXT_PATH + "/discuss/unwonderful",
-            {"id": $("#postId").val()},
+            {"discussPostId": $("#postId").val()},
             function (data) {
                 data = $.parseJSON(data);
                 if (data.code == 0) {
@@ -92,7 +92,7 @@ function setWonderful() {
 function setDelete() {
     $.post(
         CONTEXT_PATH + "/discuss/delete",
-        {"id":$("#postId").val()},
+        {"discussPostId":$("#postId").val()},
         function(data) {
             data = $.parseJSON(data);
             if(data.code == 0) {

@@ -4664,3 +4664,1109 @@ Using generated security password: c64a6a28-de9d-410a-9ee1-233d8323068f
 2021-07-25 16:52:30,435 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 16:52:30],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
 2021-07-25 16:52:30,434 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 16:52:30],访问了[com.wu.studyniuke.service.UserService.findUserById].
 2021-07-25 16:52:30,438 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 16:52:30],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:45:37,622 INFO [restartedMain] c.w.s.StudyniukeApplication [StartupInfoLogger.java:55] Starting StudyniukeApplication using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 21460 (D:\Softwares\IDEA\mavenProject\studyniuke\target\classes started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
+2021-07-25 19:45:37,627 INFO [restartedMain] c.w.s.StudyniukeApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-07-25 19:45:37,692 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-25 19:45:37,692 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-25 19:45:38,940 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-25 19:45:38,942 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-07-25 19:45:39,032 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 85 ms. Found 1 Elasticsearch repository interfaces.
+2021-07-25 19:45:39,039 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-25 19:45:39,040 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-07-25 19:45:39,051 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 10 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-07-25 19:45:39,067 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-25 19:45:39,069 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-25 19:45:39,087 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:349] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.wu.studyniuke.dao.elasticSearch.DiscussPostRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-07-25 19:45:39,088 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-07-25 19:45:40,413 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 9999 (http)
+2021-07-25 19:45:40,424 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9999"]
+2021-07-25 19:45:40,425 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-07-25 19:45:40,425 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-07-25 19:45:40,554 INFO [restartedMain] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-07-25 19:45:40,554 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 2862 ms
+2021-07-25 19:45:41,648 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
+2021-07-25 19:45:42,932 INFO [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:62] Version Spring Data Elasticsearch: 4.1.8
+2021-07-25 19:45:42,934 INFO [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:63] Version Elasticsearch Client in build: 7.9.3
+2021-07-25 19:45:42,935 INFO [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:64] Version Elasticsearch Client used: 7.9.3
+2021-07-25 19:45:42,935 INFO [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:72] Version Elasticsearch cluster: 7.9.3
+2021-07-25 19:45:43,117 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-07-25 19:45:43,399 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-25 19:45:43,529 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-07-25 19:45:43,983 INFO [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:86] 
+
+Using generated security password: 484e8e07-22d2-4fa7-ac33-1a94600f602f
+
+2021-07-25 19:45:44,059 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:51] Will secure Mvc [pattern='/resources/**'] with []
+2021-07-25 19:45:44,117 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@af03f41, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ca8e3c9, org.springframework.security.web.header.HeaderWriterFilter@2324917c, org.springframework.security.web.authentication.logout.LogoutFilter@657796f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4babc52e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f647254, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@594583a6, org.springframework.security.web.session.SessionManagementFilter@4b87c550, org.springframework.security.web.access.ExceptionTranslationFilter@4f456f0c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79cd8b7]
+2021-07-25 19:45:44,311 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:354] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [123.56.76.52:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-07-25 19:45:44,387 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-25 19:45:44,387 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-25 19:45:44,387 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1627213544385
+2021-07-25 19:45:44,390 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:965] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Subscribed to topic(s): comment, like, follow
+2021-07-25 19:45:44,397 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2021-07-25 19:45:44,403 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:354] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [123.56.76.52:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-consumer-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-07-25 19:45:44,410 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-25 19:45:44,411 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-25 19:45:44,411 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1627213544410
+2021-07-25 19:45:44,411 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:965] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Subscribed to topic(s): publish
+2021-07-25 19:45:44,412 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2021-07-25 19:45:44,415 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:354] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [123.56.76.52:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-consumer-group-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-07-25 19:45:44,423 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-25 19:45:44,424 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-25 19:45:44,424 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1627213544423
+2021-07-25 19:45:44,424 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:965] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Subscribed to topic(s): delete
+2021-07-25 19:45:44,425 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2021-07-25 19:45:44,426 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9999"]
+2021-07-25 19:45:44,822 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 9999 (http) with context path '/wu'
+2021-07-25 19:45:44,848 INFO [restartedMain] c.w.s.StudyniukeApplication [StartupInfoLogger.java:61] Started StudyniukeApplication in 8.068 seconds (JVM running for 10.073)
+2021-07-25 19:45:45,332 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.Metadata [Metadata.java:279] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Cluster ID: ukZLsw0cRhClCBq2bYJKsQ
+2021-07-25 19:45:45,332 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:279] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Cluster ID: ukZLsw0cRhClCBq2bYJKsQ
+2021-07-25 19:45:45,332 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.Metadata [Metadata.java:279] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Cluster ID: ukZLsw0cRhClCBq2bYJKsQ
+2021-07-25 19:45:45,332 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Discovered group coordinator 123.56.76.52:9092 (id: 2147483647 rack: null)
+2021-07-25 19:45:45,332 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Discovered group coordinator 123.56.76.52:9092 (id: 2147483647 rack: null)
+2021-07-25 19:45:45,332 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Discovered group coordinator 123.56.76.52:9092 (id: 2147483647 rack: null)
+2021-07-25 19:45:45,342 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:45:45,342 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:45:45,342 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:45:45,502 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:456] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2021-07-25 19:45:45,502 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:45:45,727 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:456] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2021-07-25 19:45:45,727 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:456] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2021-07-25 19:45:45,727 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:45:45,727 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:45:45,732 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:627] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Finished assignment for group at generation 16: {consumer-test-consumer-group-1-9ce3d166-3deb-45ea-8045-b658491abb24=Assignment(partitions=[like-0, comment-0, follow-0])}
+2021-07-25 19:45:45,793 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:456] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Join group failed with org.apache.kafka.common.errors.RebalanceInProgressException: The group is rebalancing, so a rejoin is needed.
+2021-07-25 19:45:45,793 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:45:46,227 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:627] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Finished assignment for group at generation 17: {consumer-test-consumer-group-2-c78228fa-60b5-4f63-98ca-1377cdd5d838=Assignment(partitions=[publish-0]), consumer-test-consumer-group-3-4eea62e7-7c57-47a1-abbd-176e0eae170a=Assignment(partitions=[delete-0]), consumer-test-consumer-group-1-9ce3d166-3deb-45ea-8045-b658491abb24=Assignment(partitions=[like-0, comment-0, follow-0])}
+2021-07-25 19:45:46,287 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:504] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Successfully joined group with generation 17
+2021-07-25 19:45:46,287 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:504] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Successfully joined group with generation 17
+2021-07-25 19:45:46,287 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:276] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Notifying assignor about the new Assignment(partitions=[publish-0])
+2021-07-25 19:45:46,287 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:276] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Notifying assignor about the new Assignment(partitions=[like-0, comment-0, follow-0])
+2021-07-25 19:45:46,292 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:288] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Adding newly assigned partitions: comment-0, like-0, follow-0
+2021-07-25 19:45:46,292 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:288] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Adding newly assigned partitions: publish-0
+2021-07-25 19:45:46,312 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:504] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Successfully joined group with generation 17
+2021-07-25 19:45:46,312 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:276] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Notifying assignor about the new Assignment(partitions=[delete-0])
+2021-07-25 19:45:46,312 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:288] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Adding newly assigned partitions: delete-0
+2021-07-25 19:45:46,357 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Setting offset for partition comment-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[123.56.76.52:9092 (id: 0 rack: null)], epoch=0}}
+2021-07-25 19:45:46,357 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Setting offset for partition publish-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[123.56.76.52:9092 (id: 0 rack: null)], epoch=0}}
+2021-07-25 19:45:46,357 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Setting offset for partition like-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[123.56.76.52:9092 (id: 0 rack: null)], epoch=0}}
+2021-07-25 19:45:46,358 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Setting offset for partition follow-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[123.56.76.52:9092 (id: 0 rack: null)], epoch=0}}
+2021-07-25 19:45:46,362 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Setting offset for partition delete-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[123.56.76.52:9092 (id: 0 rack: null)], epoch=0}}
+2021-07-25 19:45:46,367 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions assigned: [delete-0]
+2021-07-25 19:45:46,447 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions assigned: [comment-0, like-0, follow-0]
+2021-07-25 19:45:46,507 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions assigned: [publish-0]
+2021-07-25 19:46:01,920 INFO [http-nio-9999-exec-1] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-25 19:46:01,920 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-07-25 19:46:01,922 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2 ms
+2021-07-25 19:46:01,961 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:01],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,228 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,233 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,237 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,288 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,290 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,291 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,293 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,318 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,320 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,324 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,326 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,351 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,353 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,355 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,357 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,383 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,385 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,387 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,388 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,413 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,415 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,417 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,419 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,445 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,447 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,448 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,450 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,475 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,477 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,479 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,485 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,507 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,509 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,511 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,513 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,536 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,538 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,540 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,542 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,566 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,568 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,571 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,572 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,594 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,595 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,597 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,599 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,620 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,621 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,623 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,626 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,647 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,648 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,650 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,651 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,675 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,676 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,678 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,679 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,701 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,703 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,705 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,706 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,729 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,730 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,733 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,734 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,757 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,759 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,761 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,762 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,784 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,785 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,787 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,788 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:03,808 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:03,810 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:03,811 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:03,812 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:03],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,327 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,329 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,331 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,333 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,354 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,356 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,357 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,358 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,379 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,380 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,381 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,383 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,404 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,405 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,407 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,408 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,430 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,432 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,433 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,434 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,454 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,455 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,456 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,457 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,476 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,478 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,479 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,480 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,500 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,502 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,503 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,504 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,525 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,527 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,528 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,529 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,550 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,551 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,553 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,554 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,578 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,580 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,581 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,583 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,604 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,606 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,607 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,609 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,631 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,632 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,634 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,635 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,657 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,659 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,660 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,662 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,684 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,685 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,686 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,687 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,707 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,709 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,710 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,711 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,734 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,735 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,736 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,738 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,764 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,765 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,767 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,768 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,792 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,805 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,807 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,808 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:05,835 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:05,837 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:05,839 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:05,840 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:05],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:09,790 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:09,792 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:09,794 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:09,795 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:09,813 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:09,815 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:09,817 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:09,819 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:09,840 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:09,842 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:09,843 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:09,845 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:09,868 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:09,870 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:09,871 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:09,872 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:09,892 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:09,893 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:09,895 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:09,896 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:09,916 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:09,918 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:09,919 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:09,920 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:09,939 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:09,940 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:09,941 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:09,943 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:09,967 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:09,969 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:09,970 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:09,971 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:09,992 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:09,993 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:09,994 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:09,996 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:09],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:10,020 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:10,021 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:10,022 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:10,024 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:10,044 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:10,046 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:10,047 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:10,048 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:10,070 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:10,072 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:10,073 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:10,075 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:10,096 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:10,098 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:10,099 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:10,101 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:10,121 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:10,123 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:10,124 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:10,125 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:10,146 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:10,147 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:10,149 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:10,151 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:10,171 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:10,172 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:10,173 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:10,174 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:10,196 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:10,197 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:10,199 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:10,200 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:10,230 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:10,232 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:10,233 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:10,235 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:10,265 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:10,266 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:10,268 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:10,270 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:10,292 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:10,294 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:10,295 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:10,296 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:10],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:15,655 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:15,656 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:15,658 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:15,660 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:15,681 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:15,683 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:15,685 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:15,686 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:15,707 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:15,708 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:15,710 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:15,711 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:15,733 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:15,735 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:15,736 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:15,737 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:15,758 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:15,760 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:15,761 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:15,762 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:15,783 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:15,785 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:15,786 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:15,787 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:15,808 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:15,809 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:15,810 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:15,811 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:15,831 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:15,833 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:15,834 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:15,835 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:15,856 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:15,857 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:15,859 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:15,860 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:15,917 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:15,919 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:15,920 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:15,922 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:15,948 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:15,950 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:15,951 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:15,953 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:15,975 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:15,976 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:15,978 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:15,979 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:15],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:16,000 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:16,002 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:16,003 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:16,004 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:16,027 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:16,028 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:16,029 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:16,031 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:16,054 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:16,055 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:16,056 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:16,057 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:16,082 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:16,084 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:16,085 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:16,086 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:16,109 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:16,110 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:16,112 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:16,114 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:16,137 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:16,139 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:16,140 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:16,141 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:16,163 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:16,165 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:16,166 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:16,168 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:16,199 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:16,201 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:16,202 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:16,204 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:16],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,107 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,109 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,111 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,112 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,137 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,138 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,139 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,140 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,161 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,162 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,164 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,165 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,198 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,199 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,201 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,202 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,221 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,222 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,224 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,225 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,245 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,246 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,247 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,249 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,273 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,274 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,275 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,276 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,295 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,297 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,298 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,298 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,317 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,319 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,320 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,321 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,340 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,342 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,343 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,344 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,365 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,366 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,368 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,369 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,389 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,390 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,391 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,392 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,412 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,413 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,414 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,415 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,436 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,437 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,438 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,439 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,461 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,462 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,463 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,463 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,483 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,484 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,485 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,486 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,507 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,508 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,509 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,510 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,530 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,531 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,533 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,534 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,556 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,557 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,558 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,559 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:46:17,582 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:46:17,583 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:46:17,585 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:46:17,586 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:46:17],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:51:48,078 INFO [restartedMain] c.w.s.StudyniukeApplication [StartupInfoLogger.java:55] Starting StudyniukeApplication using Java 1.8.0_291 on LAPTOP-CCKROGRM with PID 19164 (D:\Softwares\IDEA\mavenProject\studyniuke\target\classes started by 吴彦淼 in D:\Softwares\IDEA\mavenProject\studyniuke)
+2021-07-25 19:51:48,078 INFO [restartedMain] c.w.s.StudyniukeApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-07-25 19:51:48,158 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-25 19:51:48,158 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-25 19:51:49,154 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-25 19:51:49,164 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-07-25 19:51:49,244 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 78 ms. Found 1 Elasticsearch repository interfaces.
+2021-07-25 19:51:49,254 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-25 19:51:49,254 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-07-25 19:51:49,264 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 10 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-07-25 19:51:49,284 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-25 19:51:49,284 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-25 19:51:49,304 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:349] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.wu.studyniuke.dao.elasticSearch.DiscussPostRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-07-25 19:51:49,304 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-07-25 19:51:50,285 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 9999 (http)
+2021-07-25 19:51:50,295 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9999"]
+2021-07-25 19:51:50,295 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-07-25 19:51:50,295 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-07-25 19:51:50,413 INFO [restartedMain] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-07-25 19:51:50,414 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 2246 ms
+2021-07-25 19:51:51,415 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:478] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.wu.studyniuke.controller.LoginController.LOGGER
+2021-07-25 19:51:52,480 INFO [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:62] Version Spring Data Elasticsearch: 4.1.8
+2021-07-25 19:51:52,482 INFO [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:63] Version Elasticsearch Client in build: 7.9.3
+2021-07-25 19:51:52,483 INFO [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:64] Version Elasticsearch Client used: 7.9.3
+2021-07-25 19:51:52,483 INFO [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:72] Version Elasticsearch cluster: 7.9.3
+2021-07-25 19:51:52,637 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-07-25 19:51:52,880 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-25 19:51:52,980 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-07-25 19:51:53,340 INFO [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:86] 
+
+Using generated security password: dbd35a22-676b-4ebd-b1bb-8e2d2e3a8c0b
+
+2021-07-25 19:51:53,404 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:51] Will secure Mvc [pattern='/resources/**'] with []
+2021-07-25 19:51:53,456 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c72dab8, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ef507ed, org.springframework.security.web.header.HeaderWriterFilter@5882f124, org.springframework.security.web.authentication.logout.LogoutFilter@698e93d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21f9a01f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63ea6f62, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@af03f41, org.springframework.security.web.session.SessionManagementFilter@339a24ae, org.springframework.security.web.access.ExceptionTranslationFilter@ea4f48b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52713de6]
+2021-07-25 19:51:53,655 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:354] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [123.56.76.52:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-07-25 19:51:53,720 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-25 19:51:53,720 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-25 19:51:53,721 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1627213913719
+2021-07-25 19:51:53,723 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:965] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Subscribed to topic(s): comment, like, follow
+2021-07-25 19:51:53,730 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2021-07-25 19:51:53,736 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:354] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [123.56.76.52:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-consumer-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-07-25 19:51:53,743 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-25 19:51:53,743 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-25 19:51:53,743 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1627213913743
+2021-07-25 19:51:53,744 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:965] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Subscribed to topic(s): delete
+2021-07-25 19:51:53,744 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2021-07-25 19:51:53,746 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:354] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [123.56.76.52:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-consumer-group-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-07-25 19:51:53,753 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.6.0
+2021-07-25 19:51:53,753 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 62abe01bee039651
+2021-07-25 19:51:53,754 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1627213913753
+2021-07-25 19:51:53,754 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:965] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Subscribed to topic(s): publish
+2021-07-25 19:51:53,754 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2021-07-25 19:51:53,754 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9999"]
+2021-07-25 19:51:53,954 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 9999 (http) with context path '/wu'
+2021-07-25 19:51:53,974 INFO [restartedMain] c.w.s.StudyniukeApplication [StartupInfoLogger.java:61] Started StudyniukeApplication in 6.678 seconds (JVM running for 8.411)
+2021-07-25 19:51:54,330 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.Metadata [Metadata.java:279] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Cluster ID: ukZLsw0cRhClCBq2bYJKsQ
+2021-07-25 19:51:54,330 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:279] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Cluster ID: ukZLsw0cRhClCBq2bYJKsQ
+2021-07-25 19:51:54,330 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.Metadata [Metadata.java:279] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Cluster ID: ukZLsw0cRhClCBq2bYJKsQ
+2021-07-25 19:51:54,330 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Discovered group coordinator 123.56.76.52:9092 (id: 2147483647 rack: null)
+2021-07-25 19:51:54,330 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Discovered group coordinator 123.56.76.52:9092 (id: 2147483647 rack: null)
+2021-07-25 19:51:54,330 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Discovered group coordinator 123.56.76.52:9092 (id: 2147483647 rack: null)
+2021-07-25 19:51:54,330 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:51:54,330 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:51:54,330 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:51:54,464 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:456] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2021-07-25 19:51:54,464 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:456] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2021-07-25 19:51:54,464 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:51:54,464 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:51:54,474 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:456] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2021-07-25 19:51:54,474 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:51:54,514 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:627] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Finished assignment for group at generation 19: {consumer-test-consumer-group-1-8ef48bd4-93de-41f4-a5c9-f348bd4b0a47=Assignment(partitions=[like-0, comment-0, follow-0])}
+2021-07-25 19:51:54,594 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:456] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Join group failed with org.apache.kafka.common.errors.RebalanceInProgressException: The group is rebalancing, so a rejoin is needed.
+2021-07-25 19:51:54,594 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:553] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-07-25 19:51:54,981 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:627] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Finished assignment for group at generation 20: {consumer-test-consumer-group-1-8ef48bd4-93de-41f4-a5c9-f348bd4b0a47=Assignment(partitions=[like-0, comment-0, follow-0]), consumer-test-consumer-group-3-9bf79b8b-d995-4853-9ef7-7a2dae46c05b=Assignment(partitions=[publish-0]), consumer-test-consumer-group-2-a8651a79-638a-4cda-9bbe-50d4516a9bc9=Assignment(partitions=[delete-0])}
+2021-07-25 19:51:55,092 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:504] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Successfully joined group with generation 20
+2021-07-25 19:51:55,092 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:504] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Successfully joined group with generation 20
+2021-07-25 19:51:55,092 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:504] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Successfully joined group with generation 20
+2021-07-25 19:51:55,092 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:276] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Notifying assignor about the new Assignment(partitions=[like-0, comment-0, follow-0])
+2021-07-25 19:51:55,092 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:276] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Notifying assignor about the new Assignment(partitions=[delete-0])
+2021-07-25 19:51:55,092 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:276] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Notifying assignor about the new Assignment(partitions=[publish-0])
+2021-07-25 19:51:55,092 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:288] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Adding newly assigned partitions: delete-0
+2021-07-25 19:51:55,092 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:288] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Adding newly assigned partitions: comment-0, like-0, follow-0
+2021-07-25 19:51:55,092 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:288] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Adding newly assigned partitions: publish-0
+2021-07-25 19:51:55,211 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Setting offset for partition publish-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[123.56.76.52:9092 (id: 0 rack: null)], epoch=0}}
+2021-07-25 19:51:55,211 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Setting offset for partition comment-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[123.56.76.52:9092 (id: 0 rack: null)], epoch=0}}
+2021-07-25 19:51:55,211 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Setting offset for partition delete-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[123.56.76.52:9092 (id: 0 rack: null)], epoch=0}}
+2021-07-25 19:51:55,211 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Setting offset for partition like-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[123.56.76.52:9092 (id: 0 rack: null)], epoch=0}}
+2021-07-25 19:51:55,211 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:815] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Setting offset for partition follow-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[123.56.76.52:9092 (id: 0 rack: null)], epoch=0}}
+2021-07-25 19:51:55,211 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions assigned: [delete-0]
+2021-07-25 19:51:55,291 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions assigned: [comment-0, like-0, follow-0]
+2021-07-25 19:51:55,349 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions assigned: [publish-0]
+2021-07-25 19:52:03,061 INFO [http-nio-9999-exec-1] o.a.c.c.C.[.[.[/wu] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-25 19:52:03,061 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-07-25 19:52:03,063 INFO [http-nio-9999-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2 ms
+2021-07-25 19:52:03,101 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:03],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,301 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,305 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,309 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,359 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,364 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,366 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,368 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,393 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,395 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,397 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,399 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,421 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,423 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,425 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,427 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,449 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,451 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,453 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,454 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,477 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,479 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,481 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,483 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,505 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,507 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,509 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,511 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,533 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,535 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,536 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,541 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,565 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,567 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,569 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,571 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,594 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,596 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,597 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,599 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,622 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,624 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,626 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,628 INFO [http-nio-9999-exec-1] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,652 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,653 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,655 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,657 INFO [http-nio-9999-exec-2] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,680 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,682 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,683 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,685 INFO [http-nio-9999-exec-3] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,705 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,707 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,708 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,710 INFO [http-nio-9999-exec-4] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,730 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,732 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,734 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,735 INFO [http-nio-9999-exec-5] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,758 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,762 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,763 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,766 INFO [http-nio-9999-exec-6] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,789 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,790 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,792 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,793 INFO [http-nio-9999-exec-7] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,816 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,817 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,819 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,820 INFO [http-nio-9999-exec-8] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,841 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,842 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,843 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,845 INFO [http-nio-9999-exec-9] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
+2021-07-25 19:52:04,883 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findLoginTicket].
+2021-07-25 19:52:04,885 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.findUserById].
+2021-07-25 19:52:04,887 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.UserService.getAuthorities].
+2021-07-25 19:52:04,888 INFO [http-nio-9999-exec-10] c.w.s.a.ServiceLogAspect [ServiceLogAspect.java:44] 用户[0:0:0:0:0:0:0:1],在[2021-07-25 19:52:04],访问了[com.wu.studyniuke.service.DataService.recordUV].
