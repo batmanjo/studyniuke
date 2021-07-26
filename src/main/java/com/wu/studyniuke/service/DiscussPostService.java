@@ -24,8 +24,8 @@ public class DiscussPostService {
     @Autowired
     private SensitiveFilter sensitiveFilter;
 
-    public List<DiscussPost> selectDiscussPosts(int userId, int offset, int limit) {
-        return discussPostMapper.selectDiscussPosts(userId, offset, limit);
+    public List<DiscussPost> selectDiscussPosts(int userId, int offset, int limit,int orderMode) {
+        return discussPostMapper.selectDiscussPosts(userId, offset, limit,orderMode);
     }
 
     public int selectDiscussPostRows(@Param("userId") int userId) {
@@ -60,6 +60,10 @@ public class DiscussPostService {
 
     public int updateStatus(int discussPostId,int status){
         return discussPostMapper.updateStatus(discussPostId,status);
+    }
+
+    public int updateScore(int postId,double score){
+         return discussPostMapper.updateScore(postId,score);
     }
 
 }

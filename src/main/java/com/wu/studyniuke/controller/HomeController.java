@@ -10,11 +10,13 @@ import com.wu.studyniuke.service.UserService;
 import com.wu.studyniuke.util.CommunityConstant;
 import com.wu.studyniuke.util.HostHolder;
 import org.apache.ibatis.annotations.AutomapConstructor;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -40,12 +42,13 @@ public class HomeController implements CommunityConstant {
     private HostHolder hostHolder;
 
     @RequestMapping(path = "/index", method = RequestMethod.GET)
-    public String getIndexPage(Model model, Page page) {
+    public String getIndexPage(Model model, Page page,
+                               @RequestParam(name = "orderMode", defaultValue = "0") int orderMode) {
         page.setRows(discussPostService.selectDiscussPostRows(0));
-        page.setPath("/index");
+        page.setPath("/index?orderMode=" + orderMode);
 
 
-        List<DiscussPost> list = discussPostService.selectDiscussPosts(0, page.getOffset(), page.getLimit());
+        List<DiscussPost> list = discussPostService.selectDiscussPosts(0, page.getOffset(), page.getLimit(), orderMode);
         List<Map<String, Object>> discussPosts = new ArrayList<>();
         if (list != null) {
             for (DiscussPost discussPost : list) {
@@ -63,15 +66,16 @@ public class HomeController implements CommunityConstant {
             }
         }
 
-        if(hostHolder.getUser() != null){
+        if (hostHolder.getUser() != null) {
             int noticeUnreadCounts = messageService.findNoticeUnreadCount(hostHolder.getUser().getId(), null);
-            int letterUnreadCount  = messageService.findLetterUnreadCount(hostHolder.getUser().getId(), null);
-            int count = noticeUnreadCounts+letterUnreadCount;
+            int letterUnreadCount = messageService.findLetterUnreadCount(hostHolder.getUser().getId(), null);
+            int count = noticeUnreadCounts + letterUnreadCount;
 
             model.addAttribute("allUnreadCount", count);
         }
 
         model.addAttribute("discussPosts", discussPosts);
+        model.addAttribute("orderMode",orderMode);
 
         return "/index";
     }
@@ -81,8 +85,8 @@ public class HomeController implements CommunityConstant {
         return "/error/500";
     }
 
-    @RequestMapping(path = "/denied",method = RequestMethod.GET)
-    public String getDenied(){
+    @RequestMapping(path = "/denied", method = RequestMethod.GET)
+    public String getDenied() {
         return "error/404";
     }
 }

@@ -7,6 +7,7 @@ import com.wu.studyniuke.service.LikeService;
 import com.wu.studyniuke.util.CommunityConstant;
 import com.wu.studyniuke.util.CommunityUtil;
 import com.wu.studyniuke.util.HostHolder;
+import com.wu.studyniuke.util.RedisKeyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
@@ -65,6 +66,13 @@ public class LikeController implements CommunityConstant {
 
             eventProducer.fireEvent(event);
         }
+
+        //计算帖子分数
+        if (entityType == ENTITY_TYPE_POST) {
+            String redisKey = RedisKeyUtil.getPostScoreKey();
+            redisTemplate.opsForSet().add(redisKey,postId);
+        }
+
 
         return CommunityUtil.getJSONString(0, null, map);
     }

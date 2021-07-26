@@ -17,6 +17,8 @@ public class RedisKeyUtil {
     private static final String PREFIX_USER = "user";
     public static final String PREFIX_UV = "uv" ;
     public static final String PREFIX_DAU = "dau";
+    private static final String PREFIX_POST = "post";
+    private static final String PREFIX_RATE_LIMIT_PUBLISH = "rate:limit:publish";
 
     //某个实体的赞
     public static String getEntityLikeKey(int entityType, int entityId) {
@@ -73,5 +75,13 @@ public class RedisKeyUtil {
 
     public static String getDAUKey(String start,String end){
         return PREFIX_DAU + SPLIT +start + SPLIT +end;
+    }
+
+    public static String getPostScoreKey() {
+        return PREFIX_POST + SPLIT + "score";
+    }
+
+    public static String getRateLimitKey(int userId) {
+        return PREFIX_RATE_LIMIT_PUBLISH + SPLIT + userId;
     }
 }

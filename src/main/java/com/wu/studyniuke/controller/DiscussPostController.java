@@ -9,7 +9,9 @@ import com.wu.studyniuke.service.UserService;
 import com.wu.studyniuke.util.CommunityConstant;
 import com.wu.studyniuke.util.CommunityUtil;
 import com.wu.studyniuke.util.HostHolder;
+import com.wu.studyniuke.util.RedisKeyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -44,6 +46,9 @@ public class DiscussPostController implements CommunityConstant {
     @Autowired
     private EventProducer eventProducer;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     @RequestMapping(path = "/add", method = RequestMethod.POST)
     @ResponseBody
     public String addDiscussPost(String title, String content) {
@@ -70,6 +75,10 @@ public class DiscussPostController implements CommunityConstant {
         event.setEntityId(discussPost.getId());
 
         eventProducer.fireEvent(event);
+
+        //计算新发帖子分数
+        String redisKey = RedisKeyUtil.getPostScoreKey();
+        redisTemplate.opsForSet().add(redisKey,discussPost.getId());
 
         return CommunityUtil.getJSONString(0, "success");
 
@@ -203,6 +212,10 @@ public class DiscussPostController implements CommunityConstant {
         event.setEntityId(discussPostId);
         eventProducer.fireEvent(event);
 
+        //计算帖子分数
+        String redisKey = RedisKeyUtil.getPostScoreKey();
+        redisTemplate.opsForSet().add(redisKey,discussPostId);
+
         return CommunityUtil.getJSONString(0);
     }
 
@@ -217,6 +230,10 @@ public class DiscussPostController implements CommunityConstant {
         event.setEntityType(ENTITY_TYPE_POST);
         event.setEntityId(discussPostId);
         eventProducer.fireEvent(event);
+
+        //计算帖子分数
+        String redisKey = RedisKeyUtil.getPostScoreKey();
+        redisTemplate.opsForSet().add(redisKey,discussPostId);
 
         return CommunityUtil.getJSONString(0);
     }
