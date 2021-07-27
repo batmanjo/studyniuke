@@ -1,5 +1,8 @@
 package com.wu.studyniuke.controller;
 
+import com.aliyun.oss.OSS;
+import com.aliyun.oss.OSSClientBuilder;
+import com.aliyun.oss.model.PutObjectRequest;
 import com.wu.studyniuke.annotation.LoginRequired;
 import com.wu.studyniuke.entity.User;
 import com.wu.studyniuke.service.FollowService;
@@ -15,10 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.ServletOutputStream;
@@ -26,6 +26,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 
 /**
@@ -46,6 +47,21 @@ public class UserController implements CommunityConstant {
     @Value("${server.servlet.context-path}")
     private String contextPath;
 
+    @Value("${aliyun.key.access}")
+    private String accessKey;
+
+    @Value("${aliyun.key.secret}")
+    private String secretKey;
+
+    @Value("${aliyun.bucket.header.name}")
+    private String headerBucketName;
+
+    @Value("${aliyun.bucket.header.url}")
+    private String headerBucketUrl;
+
+    @Value("${aliyun.endpoint.url}")
+    private String endpoint;
+
     @Autowired
     private HostHolder hostHolder;
 
@@ -61,9 +77,62 @@ public class UserController implements CommunityConstant {
     @LoginRequired
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
     public String getSettingPage() {
+//        //上传文件名称
+//        String fileName = CommunityUtil.generateUUID();
+//
+//
+//        OSS ossClient = new OSSClientBuilder().build(endpoint, accessKey, secretKey);
+//
+//        PutObjectRequest putObjectRequest = new PutObjectRequest("examplebucket",
+//                "data/"+fileName+".png",
+//                new File("D:\\localpath\\examplefile.txt"));
+//
+//        ossClient.putObject(putObjectRequest);
+//        ossClient.shutdown();
         return "site/setting";
     }
 
+
+    @RequestMapping(path = "/header/url", method = RequestMethod.POST)
+    public String updateHeader(MultipartFile headerImage, Model model) {
+        if (headerImage == null) {
+            model.addAttribute("error", "no image");
+            return "/site/setting";
+        }
+        String localFilename = headerImage.getOriginalFilename();
+        String substring = localFilename.substring(localFilename.lastIndexOf("."));
+        if (StringUtils.isBlank(substring)) {
+            model.addAttribute("error", "false fileName");
+            return "site/setting";
+        }
+
+        //阿里云实现上传文件
+        String uploadFileName = CommunityUtil.generateUUID() + substring;
+        OSS ossClient = new OSSClientBuilder().build(endpoint, accessKey, secretKey);
+
+//        System.out.println(localFilename);
+//        System.out.println(uploadFileName);
+
+        InputStream is = null;
+        try {
+            is = headerImage.getInputStream();
+        } catch (IOException e) {
+            LOGGER.error("转换失败");
+        }
+
+
+        ossClient.putObject(headerBucketName, uploadFileName, is);
+        ossClient.shutdown();
+
+
+        String headUrl = headerBucketUrl + "/" + uploadFileName;
+        userService.updateHeadUrl(hostHolder.getUser().getId(), headUrl);
+
+        return "redirect:/index";
+    }
+
+    //废弃
+    @Deprecated
     @LoginRequired
     @RequestMapping(path = "/upload", method = RequestMethod.POST)
     public String uploadHeader(MultipartFile headerImage, Model model) {
@@ -93,6 +162,8 @@ public class UserController implements CommunityConstant {
 
     }
 
+    //废弃
+    @Deprecated
     @RequestMapping(path = "/header/{filename}", method = RequestMethod.GET)
     public void getHeader(@PathVariable("filename") String filename, HttpServletResponse response) {
         filename = uploadPath + "/" + filename;

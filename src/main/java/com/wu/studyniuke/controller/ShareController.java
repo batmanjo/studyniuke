@@ -44,6 +44,15 @@ public class ShareController implements CommunityConstant {
     @Value("${wk.image.storage}")
     private String wkImageStorage;
 
+    @Value("${aliyun.bucket.share.name}")
+    private String bucketShareName;
+
+    @Value("${aliyun.bucket.share.url}")
+    private String bucketShareUrl;
+
+    @Value("${aliyun.endpoint.url}")
+    private String endpoint;
+
     @RequestMapping(path = "/share", method = RequestMethod.GET)
     @ResponseBody
     public String share(String htmlUrl) {
@@ -61,8 +70,8 @@ public class ShareController implements CommunityConstant {
 
         //返回路径
         Map<String, Object> map = new HashMap<>();
-        map.put("shareUrl", domain + contextPath + "/share/image/" + fileName);
-
+//        map.put("shareUrl", domain + contextPath + "/share/image/" + fileName);
+        map.put("shareUrl", bucketShareUrl + "/" + fileName + ".png");
         return CommunityUtil.getJSONString(0, null, map);
 
     }
